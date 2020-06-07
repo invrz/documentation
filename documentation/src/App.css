@@ -50,3 +50,11 @@
   position: relative;
   z-index: 12;
 }
+.tile{
+  font-size: 26px;
+  height: 150px;
+  font-weight: 400;
+  width: 90%;
+  display: block;
+  margin: auto;
+}

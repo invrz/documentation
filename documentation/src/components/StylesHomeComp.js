@@ -2,17 +2,15 @@ import React, {Component} from "react"
 import '../fluent.css';
 
 import Sidenav from "./SidenavComp";
-import GettingStarted from "./GettingStartedComp";
-import Footer from "./FooterComp";
+import Styles from "./StyleComp";
 
-class Home extends Component{
+class StyleHome extends Component{
   
   render(){
     return(
       <div>
         <Sidenav />
-        <GettingStarted />
-        <Footer />
+        <Styles />
       </div>
     );
   }
@@ -20,4 +18,4 @@ class Home extends Component{
 }
 
 
-export default Home;
+export default StyleHome;

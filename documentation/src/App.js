@@ -1,11 +1,12 @@
 import React, {Component} from "react"
-import {BrowserRouter as Router, NavLink, Route, Switch} from "react-router-dom";
+import {HashRouter as Router, Route, Switch} from "react-router-dom";
 import './app.css';
 import './fluent.css';
 
-import Home from "./components/HomeComp"
-import Footer from "./components/FooterComp"
 import Topnav from "./components/TopnavComp";
+import Home from "./components/HomeComp";
+import StyleHome from "./components/StylesHomeComp";
+import ControlsHome from "./components/ControlsHomeComp";
 
 class App extends Component{
   
@@ -14,12 +15,10 @@ class App extends Component{
         <Router>
           <Topnav />
           <Switch>
-            <Route path="/" component={Home} />
             <Route path="/getstarted" component={Home} />
-            <Route path="/styles" component={Home} />
-            <Route path="/controls" component={Home} />
+            <Route path="/styles" component={StyleHome} />
+            <Route path="/controls" component={ControlsHome} />
           </Switch>
-          <Footer />
         </Router>
     );
   }
