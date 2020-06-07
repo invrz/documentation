@@ -1,6 +1,5 @@
 import React, {Component} from "react"
 import '../fluent.css';
-import Topnav from "./TopnavComp";
 
 class GettingStarted extends Component{
   
@@ -77,9 +76,9 @@ class GettingStarted extends Component{
                 <p className="title bold">Extending on Usage</p>
                 <p>
                     You can go through the following links to know more about the classes which Fluent Design for Web has and how to use them in your website.<br /><br />
-                    <a href="#" className="title">Styles</a><br />
-                    <a href="#" className="title">Controls</a><br />
-                    <a href="#" className="title">Icons</a><br />
+                    <p>Styles</p><br />
+                    <p>Controls</p><br />
+                    <p>Icons</p><br />
                 </p>
 
             </div>
