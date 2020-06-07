@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.bold{
+  font-weight: bold;
+}
+.title{
+  font-size: 22px;
+}
+.code_content.enabled{
+  display: block;
+}
+.top{
+  position: relative;
+  z-index: 12;
+}

@@ -1,12 +1,16 @@
 import React, {Component} from "react"
 import '../fluent.css';
 
+import Sidenav from "./SidenavComp";
+import GettingStarted from "./GettingStartedComp";
+
 class Home extends Component{
   
   render(){
     return(
       <div>
-        <h1>Hello World</h1>
+        <Sidenav />
+        <GettingStarted />
       </div>
     );
   }
