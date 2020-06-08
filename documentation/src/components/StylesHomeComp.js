@@ -3,6 +3,7 @@ import '../fluent.css';
 
 import Sidenav from "./SidenavComp";
 import Styles from "./StyleComp";
+import FooterBottom from "./FooterBottomComp";
 
 class StyleHome extends Component{
   
@@ -11,6 +12,7 @@ class StyleHome extends Component{
       <div>
         <Sidenav />
         <Styles />
+        <FooterBottom />
       </div>
     );
   }

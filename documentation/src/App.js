@@ -7,8 +7,9 @@ import Topnav from "./components/TopnavComp";
 import Home from "./components/HomeComp";
 import StyleHome from "./components/StylesHomeComp";
 import ControlsHome from "./components/ControlsHomeComp";
+import Typography from "./components/styles/TypographyComp";
 
-import TextInput from "./components/controls/TextInputComp";
+
 
 class App extends Component{
   
@@ -20,7 +21,7 @@ class App extends Component{
             <Route path="/getstarted" component={Home} />
             <Route path="/styles" component={StyleHome} />
             <Route path="/controls" component={ControlsHome} />
-            <Route path="/text_input" component={TextInput} />
+            <Route path="/typography" component={Typography} />
           </Switch>
         </Router>
     );

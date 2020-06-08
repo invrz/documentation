@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import '../fluent.css';
+import { NavLink } from "react-router-dom";
 
 class Styles extends Component{
   
@@ -12,7 +13,7 @@ class Styles extends Component{
             <br />
             <div className="page_container">
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Colors</button>
+                <NavLink to="/typography"><button className="primary_white tile zi3">Colors</button></NavLink>
               </div>
               <div className="column large4 medium10 small12">
                 <button className="primary_white tile zi3">Typography</button>
