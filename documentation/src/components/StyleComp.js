@@ -13,10 +13,10 @@ class Styles extends Component{
             <br />
             <div className="page_container">
               <div className="column large4 medium10 small12">
-                <NavLink to="/typography"><button className="primary_white tile zi3">Colors</button></NavLink>
+                <button className="primary_white tile zi3">Colors</button>
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Typography</button>
+                <NavLink to="/typography"><button className="primary_white tile zi3">Typography</button></NavLink>
               </div>
               <div className="column large4 medium10 small12">
                 <button className="primary_white tile zi3">Elevation</button>

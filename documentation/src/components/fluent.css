@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark){
     body{background: #1e1e1e; color: #fcfcfc;}
     a, .link, ul .dropdown_btn{
-        color: #fcfcfc;
+        color: #0065AF;
     }
     .modal_container, .sidepanel_container, .overlay{
         background: #1e1e1eaa;
@@ -52,6 +52,7 @@ a,p,pre{font-size: 18px; font-weight: 400;}
     margin: auto;
     padding: 10px 30px;
 }
+.outline{border: 1px solid #000; padding: 4px; border-radius: 10px;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; padding: 1%;}
@@ -261,7 +262,7 @@ ul.nav li{
 
 /*Controls*/
 
-a,.link{color:#000; position: relative; z-index: 0; text-decoration-color: #06A7DD;}
+a,.link{color:#0065AF; position: relative; z-index: 0; text-decoration: none; font-weight: 500; line-height: 32px;}
 a:before,.link:before{position: absolute; background: #06955B; width: 0%; height: 15%; content: ''; left:0; bottom: 0; transition:1s ease;}
 a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 100%; transition: 1s ease;}
 .headlink{margin-left: 100px; font-size: 32px; text-decoration: none;}
@@ -889,6 +890,7 @@ li{font-size: 14px;}
     font-family: 'Consolas', 'Roboto';
     text-align: left;
     overflow-x: scroll;
+    border-radius: 10px;
 }
 
 .code_container{
@@ -914,7 +916,7 @@ img.square{
     }
     
     a, .link, ul .dropdown_btn{
-        color: #fcfcfc;
+        color: #0065AF;
     }
 
     .zi0{box-shadow:  0 0.1px 0.4px 0 rgba(240, 240, 240, 240.4), 0 0.1px 0.3px 0 rgba(240, 240, 240, 0.38); transition: 250s ease;}
