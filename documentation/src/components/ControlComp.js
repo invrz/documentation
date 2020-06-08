@@ -1,5 +1,6 @@
-import React, {Component} from "react"
+import React, {Component} from "react";
 import '../fluent.css';
+import { NavLink } from "react-router-dom";
 
 class Controls extends Component{
   
@@ -12,9 +13,18 @@ class Controls extends Component{
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Basic Inputs</p>
-                <p>
-                    Items
-                </p>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/text_input">Text Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Password Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Tel Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Number Input</NavLink><br />
+                </div>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/text_input">Email Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Date Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Date Time Input</NavLink><br />
+                    <NavLink to="/controls/text_input">Month Input</NavLink><br />
+            </div>
             </div>
             <br /><br />
             <div className="page_container primary_white zi2">
