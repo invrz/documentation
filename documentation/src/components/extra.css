@@ -1,0 +1,21 @@
+.tab{
+    height: 100px;
+    width: 150px;
+    margin: 5px;
+    font-size: 16px;
+}
+.outline{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 20px;
+    background: #fc4c8c33;
+    border: none;
+}
+
+.democol{margin: 0.5px}
+
+.iconsearchframe{
+    height: 600px;
+    border: none;
+}
+.largeicon{font-size: 40px; padding: 5px; margin: 5px; box-shadow: 0px 1px 2px 0px #1e1e1e; background: #fcfcfc;}

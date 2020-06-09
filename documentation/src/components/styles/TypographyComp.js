@@ -34,12 +34,12 @@ class Typography extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
-                          &lt;h1&gt;Heading h1&lt;h1&gt; <br />
-                          &lt;h2&gt;Heading h2&lt;h2&gt; <br />
-                          &lt;h3&gt;Heading h3&lt;h3&gt; <br />
-                          &lt;h4&gt;Heading h4&lt;h4&gt; <br />
-                          &lt;h5&gt;Heading h5&lt;h5&gt; <br />
-                          &lt;h6&gt;Heading h6&lt;h6&gt; <br />
+                          &lt;h1&gt;Heading h1&lt;/h1&gt; <br />
+                          &lt;h2&gt;Heading h2&lt;/h2&gt; <br />
+                          &lt;h3&gt;Heading h3&lt;/h3&gt; <br />
+                          &lt;h4&gt;Heading h4&lt;/h4&gt; <br />
+                          &lt;h5&gt;Heading h5&lt;/h5&gt; <br />
+                          &lt;h6&gt;Heading h6&lt;/h6&gt; <br />
                         </pre>
                   </div>
             </div><br /><br />
@@ -61,10 +61,10 @@ class Typography extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
-                          &lt;p&gt;This is a paragraph&lt;p&gt; <br />
-                          &lt;p class="bold"&gt;This is a bold paragraph&lt;p&gt; <br /><br />
-                          &lt;pre&gt;This is a pre paragraph&lt;pre&gt; <br />
-                          &lt;pre class="bold"&gt;This is a bold pre paragraph&lt;pre&gt; <br />
+                          &lt;p&gt;This is a paragraph&lt;/p&gt; <br />
+                          &lt;p class="bold"&gt;This is a bold paragraph&lt;/p&gt; <br /><br />
+                          &lt;pre&gt;This is a pre paragraph&lt;/pre&gt; <br />
+                          &lt;pre class="bold"&gt;This is a bold pre paragraph&lt;/pre&gt; <br />
                         </pre>
                   </div>
             </div><br /><br />
@@ -83,7 +83,7 @@ class Typography extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
-                          &lt;a href="#"&gt;This is a link&lt;a&gt; <br />
+                          &lt;a href="#"&gt;This is a link&lt;/a&gt; <br />
                         </pre>
                   </div>
             </div>
