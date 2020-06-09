@@ -23,6 +23,7 @@ class Sidenav extends Component{
                       <NavLink to="/typography"><li>Typography</li></NavLink>
                     </div>
                 </ul>
+
             </div>
             
         </nav>

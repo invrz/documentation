@@ -12,7 +12,7 @@ class Controls extends Component{
             <h6>Controls</h6>
             <br />
             <div className="page_container primary_white zi2">
-                <p className="title bold">Basic Inputs</p>
+                <p className="title bold">Inputs - Basic</p>
                 <div className="column large6 medium6 small12">
                     <NavLink to="/text_input">Text Input</NavLink><br />
                     <NavLink to="/controls/pass_input">Password Input</NavLink><br />
@@ -28,7 +28,7 @@ class Controls extends Component{
             </div>
             <br /><br />
             <div className="page_container primary_white zi2">
-                <p className="title bold">Advanced Inputs</p>
+                <p className="title bold">Inputs - Advanced</p>
                 <div className="column large6 medium6 small12">
                     <NavLink to="/controls/range">Range</NavLink><br />
                     <NavLink to="/controls/rating">Rating</NavLink><br />
@@ -40,30 +40,6 @@ class Controls extends Component{
                     <NavLink to="/controls/searchbox">Searchbox</NavLink><br />
                     <NavLink to="/controls/select">Select</NavLink><br />
                     <NavLink to="/controls/adv_sel">Advanced Select</NavLink><br />
-                </div>
-            </div>
-            <br /><br />
-            <div className="page_container primary_white zi2">
-                <p className="title bold">Utilities</p>
-                <div className="column large6 medium6 small12">
-                    <NavLink to="/controls/btns">Buttons</NavLink><br />
-                    <NavLink to="/controls/dropdown">Dropdown</NavLink><br />
-                </div>
-                <div className="column large6 medium6 small12">
-                    <NavLink to="/controls/overlay">Overlay</NavLink><br />
-                    <NavLink to="/controls/snackbar">Snackbar</NavLink><br />
-                </div>
-            </div>
-            <br /><br />
-            <div className="page_container primary_white zi2">
-                <p className="title bold">Surfaces</p>
-                <div className="column large6 medium6 small12">
-                    <NavLink to="/controls/window">Window</NavLink><br />
-                    <NavLink to="/controls/sidepanel">Side Panel</NavLink><br />
-                </div>
-                <div className="column large6 medium6 small12">
-                    <NavLink to="/controls/tooltip">Tooltip</NavLink><br />
-                    <NavLink to="/controls/d_box">Dialogue Box</NavLink><br />
                 </div>
             </div>
             <br /><br />
@@ -100,6 +76,31 @@ class Controls extends Component{
                     <NavLink to="/controls/spinners">Spinners</NavLink><br />
                 </div>
             </div>
+            <br /><br />
+            <div className="page_container primary_white zi2">
+                <p className="title bold">Surfaces</p>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/window">Window</NavLink><br />
+                    <NavLink to="/controls/sidepanel">Side Panel</NavLink><br />
+                </div>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/tooltip">Tooltip</NavLink><br />
+                    <NavLink to="/controls/d_box">Dialogue Box</NavLink><br />
+                </div>
+            </div>
+            <br /><br />
+            <div className="page_container primary_white zi2">
+                <p className="title bold">Utilities</p>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/btns">Buttons</NavLink><br />
+                    <NavLink to="/controls/dropdown">Dropdown</NavLink><br />
+                </div>
+                <div className="column large6 medium6 small12">
+                    <NavLink to="/controls/overlay">Overlay</NavLink><br />
+                    <NavLink to="/controls/snackbar">Snackbar</NavLink><br />
+                </div>
+            </div>
+            <br />
         </main>
     );
   }

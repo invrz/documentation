@@ -4,6 +4,7 @@ import '../extra.css';
 import '../icons.css';
 import Sidenav from "../SidenavComp";
 import Footer from "../FooterComp";
+import IconComp from "./IconPackComp";
 
 class Icons extends Component{
   
@@ -34,10 +35,10 @@ class Icons extends Component{
                   To display Fluent Icons, you need to add appropriate ms-Icon classes with a modifier class inside an "i" tag. For example.
                 </p>
                 <div className="page_container outline">
-                  <i className="ms-Icon ms-Icon--12PointStar largeicon"></i>
-                  <i className="ms-Icon ms-Icon--GlobalNavButton largeicon"></i>
-                  <i className="ms-Icon ms-Icon--Home largeicon"></i>
-                  <i className="ms-Icon ms-Icon--FolderHorizontal largeicon"></i>
+                  <i className="ms-Icon ms-Icon--12PointStar icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i className="ms-Icon ms-Icon--GlobalNavButton icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i className="ms-Icon ms-Icon--Home icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i className="ms-Icon ms-Icon--FolderHorizontal icon-large"></i>
                 </div>
                 <p>
                   The language-markup to get the above output is
@@ -59,8 +60,8 @@ class Icons extends Component{
                   by setting different font size for "i" tag.
                 </p>
                 <div className="page_container outline">
-                  <i className="ms-Icon ms-Icon--12PointStar icon-small"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i className="ms-Icon ms-Icon--12PointStar icon-medium"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i className="ms-Icon ms-Icon--12PointStar icon-small"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i className="ms-Icon ms-Icon--12PointStar icon-medium"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <i className="ms-Icon ms-Icon--12PointStar icon-large"></i>
                 </div>
                 <p>
@@ -79,10 +80,9 @@ class Icons extends Component{
             <div className="page_container primary_white zi2">
                 <p className="title bold">Icons Available to Use in Fluent Design</p>
                 <p>
-                  This is an Icons List where you can check which icons are available by searching for them.
+                  This is an Icons List where you can check which icons are available. Click on the icons to know the modifier class names.
                 </p>
-                <iframe src="https://uifabricicons.azurewebsites.net/" className="column large12 medium12 small12 iconsearchframe">
-                </iframe>
+                <IconComp />
             </div><br /><br />
         </main>
         <Footer />

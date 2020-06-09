@@ -85,8 +85,8 @@ class Grid9 extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
-                          &lt;div className="column lg-3 md-3 sm-3 primary_inverted ta_center democol"&gt;3&lt;/div&gt;<br />
-                          &lt;div className="column lg-6 md-6 sm-6 primary_inverted ta_center democol"&gt;6&lt;/div&gt;
+                          &lt;div className="column lg-3 md-3 sm-3 primary_inverted ta_center"&gt;3&lt;/div&gt;<br />
+                          &lt;div className="column lg-6 md-6 sm-6 primary_inverted ta_center"&gt;6&lt;/div&gt;
                         </pre>
                   </div>
             </div><br /><br />
@@ -107,8 +107,8 @@ class Grid9 extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
-                          &lt;div class="column offset-lg-6 offset-md-6 offset-sm-3 lg-3 md-3 sm-3 primary_inverted ta_center"&gt;6 Column Offset&lt;/div&gt;
-                          &lt;div class="column offset-lg-3 offset-md-3 offset-sm-6 lg-6 md-6 sm-6 primary_inverted ta_center"&gt;3 Column Offset&lt;/div&gt;<br />
+                          &lt;div class="column offset-lg-6 offset-md-6 offset-sm-3 lg-3 md-3 sm-3 primary_inverted ta_center"&gt;6 Column Offset&lt;/div&gt;<br />
+                          &lt;div class="column offset-lg-3 offset-md-3 offset-sm-6 lg-6 md-6 sm-6 primary_inverted ta_center"&gt;3 Column Offset&lt;/div&gt;
                         </pre>
                 </div>
                 <p>Even though there is an offset-size-9 available, it should not be used as it basically means you're skipping a whole row, 

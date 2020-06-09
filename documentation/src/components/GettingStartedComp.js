@@ -79,7 +79,7 @@ class GettingStarted extends Component{
                     You can go through the following links to know more about the classes which Fluent Design for Web has and how to use them in your website.<br /><br />
                     <NavLink to="/styles">Styles</NavLink><br />
                     <NavLink to="/controls">Controls</NavLink><br />
-                    <NavLink to="/icons">Icons</NavLink><br />
+                    <NavLink to="/iconpack">Icons</NavLink><br />
                 </p>
 
             </div>
