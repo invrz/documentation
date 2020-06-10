@@ -38,3 +38,11 @@
 .grid div span{font-size: 11px; visibility: hidden; text-align: center; overflow-wrap: normal;}
 
 .grid div i:hover ~ span{visibility: visible;}
+
+span.label{
+    font-size: 12px;
+    font-weight: bold;
+}
+.btm_col{
+    vertical-align: bottom;
+}

@@ -75,7 +75,7 @@ class Sidenav extends Component{
                       </div>
 
                       <div className="nav">
-                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Progress</div>
+                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Progress Indicators</div>
                         <div className="nav_group">
                           <NavLink to="/progress_bar">Progress Bars</NavLink><br />
                           <NavLink to="/spinners">Spinners</NavLink><br />

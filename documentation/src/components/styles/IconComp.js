@@ -60,9 +60,18 @@ class Icons extends Component{
                   by setting different font size for "i" tag.
                 </p>
                 <div className="page_container outline">
-                  <i className="ms-Icon ms-Icon--12PointStar icon-small"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i className="ms-Icon ms-Icon--12PointStar icon-medium"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i className="ms-Icon ms-Icon--12PointStar icon-large"></i>
+                  <div className="column large1 medium1 small1 ta_center btm_col">
+                    <i className="ms-Icon ms-Icon--12PointStar icon-small"></i><br />
+                    <span className="label">Small</span>
+                  </div>
+                  <div className="column large1 medium1 small1 ta_center btm_col">
+                    <i className="ms-Icon ms-Icon--12PointStar icon-medium"></i><br />
+                    <span className="label">Medium</span>
+                  </div>
+                  <div className="column large1 medium1 small1 ta_center btm_col">
+                    <i className="ms-Icon ms-Icon--12PointStar icon-large"></i><br />
+                    <span className="label">Large</span>
+                  </div>
                 </div>
                 <p>
                   The language-markup to get the above output is

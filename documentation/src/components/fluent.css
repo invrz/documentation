@@ -743,15 +743,18 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     animation: spin 1s infinite linear;
     border: 4px solid rgba(0, 0, 0, 0.4);
     border-top: 4px solid #06A7DD;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
 }
 @keyframes spin{
     0%{transform:rotateZ(0deg);}
     100%{transform:rotateZ(360deg);}
 }
-.xs{width: 20px; height: 20px;}
-.s{width: 32px; height: 32px;}
-.m{width: 44px; height: 44px;}
-.l{width: 60px; height: 60px;}
+.xs{width: 20px; height: 20px; border: 4px solid rgba(0, 0, 0, 0.4); border-top: 4px solid #06A7DD;}
+.s{width: 32px; height: 32px; border: 5px solid rgba(0, 0, 0, 0.4); border-top: 5px solid #06A7DD;}
+.m{width: 44px; height: 44px; border: 6px solid rgba(0, 0, 0, 0.4); border-top: 6px solid #06A7DD;}
+.l{width: 60px; height: 60px; border: 7px solid rgba(0, 0, 0, 0.4); border-top: 7px solid #06A7DD;}
 
 /*Surfaces*/
 

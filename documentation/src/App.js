@@ -17,6 +17,8 @@ import Grid12 from "./components/styles/Grid12Comp";
 import Grid9 from "./components/styles/Grid9Comp";
 import Icons from "./components/styles/IconComp";
 
+import Spinners from "./components/controls/SpinnerComp";
+import ProgressBar from "./components/controls/ProgressBarComp";
 
 
 class App extends Component{
@@ -39,6 +41,9 @@ class App extends Component{
             <Route path="/12colgrid" component={Grid12} />
             <Route path="/9colgrid" component={Grid9} />
             <Route path="/iconpack" component={Icons} />
+
+            <Route path="/spinners" component={Spinners} />
+            <Route path="/progress_bar" component={ProgressBar} />
           </Switch>
         </Router>
     );

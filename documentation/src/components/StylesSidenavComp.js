@@ -65,7 +65,7 @@ class StylesSidenav extends Component{
                       </div>
 
                       <div className="nav">
-                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Navigation</div>
+                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Navigation Indicators</div>
                         <div className="nav_group">
                           <NavLink to="/pivot_menu">Pivot Menu</NavLink><br />
                           <NavLink to="/command_bar">Command Bar</NavLink><br />
