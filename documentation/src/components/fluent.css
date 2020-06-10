@@ -59,8 +59,8 @@ footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
 .center{display: block; margin: auto;}
-.left{display: block; margin-left: 0px;}
-.right{display: block; margin-right: 0px;}
+.left{display: block; float: left;}
+.right{display: block; float: right;}
 
 
 /*For Large Screens*/

@@ -11,7 +11,7 @@ class StyleHome extends Component{
     return(
       <div>
         <StylesSidenav />
-        <Styles />
+        <Styles /><br /><br />
         <FooterBottom />
       </div>
     );

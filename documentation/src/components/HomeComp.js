@@ -11,7 +11,7 @@ class Home extends Component{
     return(
       <div>
         <Sidenav />
-        <GettingStarted />
+        <GettingStarted /><br /><br />
         <Footer />
       </div>
     );

@@ -11,7 +11,7 @@ class ControlHome extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <Controls />
+        <Controls /><br /><br />
         <Footer />
       </div>
     );
