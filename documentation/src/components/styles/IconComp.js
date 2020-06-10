@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import '../fluent.css';
 import '../extra.css';
 import '../icons.css';
-import Sidenav from "../SidenavComp";
+import StylesSidenav from "../StylesSidenavComp";
 import Footer from "../FooterComp";
 import IconComp from "./IconPackComp";
 
@@ -11,7 +11,7 @@ class Icons extends Component{
   render(){
     return(
       <div>
-        <Sidenav />
+        <StylesSidenav />
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />

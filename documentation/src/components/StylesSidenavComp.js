@@ -3,7 +3,7 @@ import '../fluent.css';
 import '../app.css';
 import { NavLink } from "react-router-dom";
 
-class Sidenav extends Component{
+class StylesSidenav extends Component{
   
   render(){
     return(
@@ -25,7 +25,7 @@ class Sidenav extends Component{
                 </div>
 
                 <div className="nav">
-                    <input type="checkbox" className="nav_btn" defaultChecked/><div className="nav_title">&gt;Controls</div>
+                    <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Controls</div>
                     <div className="nav_group">
                       <div className="nav">
                         <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Inputs - Basic</div>
@@ -115,4 +115,4 @@ class Sidenav extends Component{
 }
 
 
-export default Sidenav;
+export default StylesSidenav;
