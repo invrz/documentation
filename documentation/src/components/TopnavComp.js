@@ -23,7 +23,7 @@ class Topnav extends Component{
             <NavLink to="/getstarted" className="pivot_button small0">Get Started</NavLink>
             <NavLink to="/styles" className="pivot_button small0">Styles</NavLink>
             <NavLink to="/controls" className="pivot_button small0">Controls</NavLink>
-            <button className="primary_blue right large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-medium"></i></button>
+            <button className="primary_blue right large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button>
         </div>
 
         <div className="sidepanel_container" id="side">

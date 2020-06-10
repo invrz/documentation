@@ -19,7 +19,10 @@ import Icons from "./components/styles/IconComp";
 
 import Spinners from "./components/controls/SpinnerComp";
 import ProgressBar from "./components/controls/ProgressBarComp";
-
+import Window from "./components/controls/WindowComp";
+import SidePanel from "./components/controls/SidePanelComp";
+import Overlay from "./components/controls/OverlayComp";
+import DialogueBox from "./components/controls/DialogueBoxComp";
 
 class App extends Component{
   
@@ -44,6 +47,10 @@ class App extends Component{
 
             <Route path="/spinners" component={Spinners} />
             <Route path="/progress_bar" component={ProgressBar} />
+            <Route path="/window" component={Window} />
+            <Route path="/sidepanel" component={SidePanel} />
+            <Route path="/overlay" component={Overlay} />
+            <Route path="/d_box" component={DialogueBox} />
           </Switch>
         </Router>
     );

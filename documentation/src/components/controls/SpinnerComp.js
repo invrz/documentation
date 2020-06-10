@@ -52,19 +52,19 @@ class Spinners extends Component{
                   for extra small, small, medium and large repectively.
                 </p>
                 <div className="page_container outline">
-                  <div className="column large1 medium1 small1 ta_center btm_col">
+                  <div className="column large1 medium3 small6 ta_center btm_col">
                     <p className="spinner xs"></p><br />
                     <span className="label">Extra Small</span>
                   </div>
-                  <div className="column large1 medium1 small1 ta_center btm_col">
+                  <div className="column large1 medium3 small6 ta_center btm_col">
                     <p className="spinner s"></p><br />
                     <span className="label">Small</span>
                   </div>
-                  <div className="column large1 medium1 small1 ta_center btm_col">
+                  <div className="column large1 medium3 small6 ta_center btm_col">
                     <p className="spinner m"></p><br />
                     <span className="label">Medium</span>
                   </div>
-                  <div className="column large1 medium1 small1 ta_center btm_col">
+                  <div className="column large1 medium3 small6 ta_center btm_col">
                     <p className="spinner l"></p><br />
                     <span className="label">Large</span>
                   </div>

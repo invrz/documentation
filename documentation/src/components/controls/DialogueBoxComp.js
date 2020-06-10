@@ -4,7 +4,7 @@ import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class ProgressBar extends Component{
+class DialogueBox extends Component{
   
   render(){
     return(
@@ -73,4 +73,4 @@ class ProgressBar extends Component{
 }
 
 
-export default ProgressBar;
+export default DialogueBox;

@@ -250,7 +250,6 @@ nav{
     right: 0px;
     bottom: 0px;
     padding: 2%;
-    background-color: #fcfcfc66;
     background-image: url('./gausian_blur.png');
     overflow-y: auto;
 }
@@ -708,7 +707,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     width: 0%;
     height: 100%;
     background: radial-gradient(circle at 95%, #08415C, #05A5DA);
-    animation: simple 5s infinite ease;
+    animation: simple 4s infinite ease-in-out;
     border-radius: 90px;
 }
 @keyframes simple{
@@ -727,11 +726,12 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .indeterminate_progress_bar::before{
     position: absolute;
     content: ' ';
-    width: 30%;
+    width: 40%;
     height: 100%;
     background: radial-gradient(circle at 50%, #08415C, #06A7DD);
-    animation: intderminate 5s infinite linear;
+    animation: intderminate 2.5s infinite ease-in-out;
     margin-left: -12.5%;
+    border-radius: 90px;
     border-radius: 90px;
 }
 @keyframes intderminate{
@@ -761,8 +761,13 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .mod_close_btn{
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
+.modal_title{
+    font-size: 20px;
+    margin: 4px;
+}
 .modal_container{
     background-image: url('./gausian_blur.png');
+    backdrop-filter: blur(10px);
     display: none;
     position: fixed;
     top:0;

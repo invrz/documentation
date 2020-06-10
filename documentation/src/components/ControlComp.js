@@ -84,7 +84,7 @@ class Controls extends Component{
                     <NavLink to="/sidepanel">Side Panel</NavLink><br />
                 </div>
                 <div className="column large6 medium6 small12">
-                    <NavLink to="/tooltip">Tooltip</NavLink><br />
+                    <NavLink to="/overlay">Overlay</NavLink><br />
                     <NavLink to="/d_box">Dialogue Box</NavLink><br />
                 </div>
             </div>
@@ -96,7 +96,7 @@ class Controls extends Component{
                     <NavLink to="/dropdown">Dropdown</NavLink><br />
                 </div>
                 <div className="column large6 medium6 small12">
-                    <NavLink to="/overlay">Overlay</NavLink><br />
+                    <NavLink to="/tooltip">Tooltip</NavLink><br />
                     <NavLink to="/snackbar">Snackbar</NavLink><br />
                 </div>
             </div>
