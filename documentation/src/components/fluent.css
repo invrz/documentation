@@ -57,7 +57,7 @@ a,p,pre{font-size: 18px; font-weight: 400;}
 .outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 84%;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
-.column{display: flexbox; vertical-align: top;}
+.column{display: inline-block; vertical-align: top;}
 .center{display: block; margin: auto;}
 .left{display: block; margin-left: 0px;}
 .right{display: block; margin-right: 0px;}
