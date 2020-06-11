@@ -87,7 +87,7 @@ class Sidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/window">Window</NavLink><br />
                           <NavLink to="/sidepanel">Sidepanel</NavLink><br />
-                          <NavLink to="/d_box">Dialogue Box</NavLink>
+                          <NavLink to="/d_box">Dialogue Box</NavLink><br />
                           <NavLink to="/overlay">Overlay</NavLink><br />
                         </div>
                       </div>
@@ -97,7 +97,7 @@ class Sidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/buttons">Buttons</NavLink><br />
                           <NavLink to="/dropdown">Dropdown</NavLink><br />
-                          <NavLink to="/snackbar">Snackbar</NavLink>
+                          <NavLink to="/snackbar">Snackbar</NavLink><br />
                           <NavLink to="/tooltip">Tooltip</NavLink><br />
                         </div>
                       </div>

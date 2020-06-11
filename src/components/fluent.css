@@ -832,8 +832,8 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 
 .dialogue_box{
     z-index: 12;
-    position: absolute;
-    top:60%;
+    position: fixed;
+    top:40%;
     left: 40%;
     min-width: 350px;
     min-height: 150px;
