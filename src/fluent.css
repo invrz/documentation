@@ -761,8 +761,13 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .mod_close_btn{
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
+.modal_title{
+    font-size: 20px;
+    margin: 4px;
+}
 .modal_container{
     background-image: url('./gausian_blur.png');
+    backdrop-filter: blur(10px);
     display: none;
     position: fixed;
     top:0;
@@ -792,6 +797,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     right: 0;
     z-index: 11;
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     display: none;
 }
 .sidepanel_content{
@@ -826,8 +832,8 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 
 .dialogue_box{
     z-index: 12;
-    position: absolute;
-    top:60%;
+    position: fixed;
+    top:40%;
     left: 40%;
     min-width: 350px;
     min-height: 150px;
