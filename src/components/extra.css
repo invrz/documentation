@@ -1,0 +1,48 @@
+.tab{
+    height: 100px;
+    width: 150px;
+    margin: 5px;
+    font-size: 16px;
+}
+.outline{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 20px;
+    background: #fc4c8c33;
+    border: none;
+}
+
+.democol{margin: 0.5px}
+
+.frame{
+    height: 800px;
+    border: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.largeicon{font-size: 40px; padding: 5px; margin: 5px; box-shadow: 0px 1px 2px 0px #1e1e1e; background: #fcfcfc;}
+
+.grid{
+    display: block;
+}
+.grid div{
+    margin-left: 0px;
+    display: inline-block;
+    padding: 8px;
+    margin: 6px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+.grid div i{font-size: 30px;}
+.grid div span{font-size: 11px; visibility: hidden; text-align: center; overflow-wrap: normal;}
+
+.grid div i:hover ~ span{visibility: visible;}
+
+span.label{
+    font-size: 12px;
+    font-weight: bold;
+}
+.btm_col{
+    vertical-align: bottom;
+}
