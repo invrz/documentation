@@ -761,8 +761,13 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
 .mod_close_btn{
     padding: 10px; padding-left: 20px; padding-right: 20px;
 }
+.modal_title{
+    font-size: 20px;
+    margin: 4px;
+}
 .modal_container{
     background-image: url('./gausian_blur.png');
+    backdrop-filter: blur(10px);
     display: none;
     position: fixed;
     top:0;

@@ -1,16 +1,18 @@
 import React, {Component} from "react"
 import '../fluent.css';
 
-import Sidenav from "./SidenavComp";
+import StylesSidenav from "./StylesSidenavComp";
 import Styles from "./StyleComp";
+import FooterBottom from "./FooterBottomComp";
 
 class StyleHome extends Component{
   
   render(){
     return(
       <div>
-        <Sidenav />
-        <Styles />
+        <StylesSidenav />
+        <Styles /><br /><br />
+        <FooterBottom />
       </div>
     );
   }

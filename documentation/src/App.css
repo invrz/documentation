@@ -58,3 +58,13 @@
   display: block;
   margin: auto;
 }
+
+
+@media (min-width: 641px){
+  .bottom{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+

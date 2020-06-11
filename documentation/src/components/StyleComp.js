@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import '../fluent.css';
+import { NavLink } from "react-router-dom";
 
 class Styles extends Component{
   
@@ -12,24 +13,38 @@ class Styles extends Component{
             <br />
             <div className="page_container">
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Colors</button>
+                <NavLink to="/12colgrid"><button className="primary_white tile zi3">12 Col Grid</button></NavLink>
+                <br />
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Typography</button>
+                <NavLink to="/9colgrid"><button className="primary_white tile zi3">9 Col Grid</button></NavLink>
+                <br />
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Elevation</button>
+                <NavLink to="/colors"><button className="primary_white tile zi3">Colors</button></NavLink>
+                <br />
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">12 Col Grid</button>
+                <NavLink to="/depth"><button className="primary_white tile zi3">Depth</button></NavLink>
+                <br />
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">9 Col Grid</button>
+                <NavLink to="/objalign"><button className="primary_white tile zi3">Elements Alignment</button></NavLink>
+                <br />
               </div>
               <div className="column large4 medium10 small12">
-                <button className="primary_white tile zi3">Icon Pack</button>
+                <NavLink to="/iconpack"><button className="primary_white tile zi3">Icon Pack</button></NavLink>
+                <br />
               </div>
+              <div className="column large4 medium10 small12">
+                <NavLink to="/textalign"><button className="primary_white tile zi3">Text Alignment</button></NavLink>
+                <br />
               </div>
+              <div className="column large4 medium10 small12">
+                <NavLink to="/typography"><button className="primary_white tile zi3">Typography</button></NavLink>
+                <br />
+              </div>
+            </div>
         </main>
     );
   }

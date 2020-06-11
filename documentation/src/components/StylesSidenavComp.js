@@ -3,7 +3,7 @@ import '../fluent.css';
 import '../app.css';
 import { NavLink } from "react-router-dom";
 
-class Sidenav extends Component{
+class StylesSidenav extends Component{
   
   render(){
     return(
@@ -25,7 +25,7 @@ class Sidenav extends Component{
                 </div>
 
                 <div className="nav">
-                    <input type="checkbox" className="nav_btn" defaultChecked/><div className="nav_title">&gt;Controls</div>
+                    <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Controls</div>
                     <div className="nav_group">
                       <div className="nav">
                         <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Inputs - Basic</div>
@@ -65,7 +65,7 @@ class Sidenav extends Component{
                       </div>
 
                       <div className="nav">
-                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Navigation</div>
+                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Navigation Indicators</div>
                         <div className="nav_group">
                           <NavLink to="/pivot_menu">Pivot Menu</NavLink><br />
                           <NavLink to="/command_bar">Command Bar</NavLink><br />
@@ -75,7 +75,7 @@ class Sidenav extends Component{
                       </div>
 
                       <div className="nav">
-                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Progress Indicators</div>
+                        <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Progress</div>
                         <div className="nav_group">
                           <NavLink to="/progress_bar">Progress Bars</NavLink><br />
                           <NavLink to="/spinners">Spinners</NavLink><br />
@@ -87,8 +87,8 @@ class Sidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/window">Window</NavLink><br />
                           <NavLink to="/sidepanel">Sidepanel</NavLink><br />
-                          <NavLink to="/d_box">Dialogue Box</NavLink>
                           <NavLink to="/overlay">Overlay</NavLink><br />
+                          <NavLink to="/d_box">Dialogue Box</NavLink>
                         </div>
                       </div>
 
@@ -97,12 +97,12 @@ class Sidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/buttons">Buttons</NavLink><br />
                           <NavLink to="/dropdown">Dropdown</NavLink><br />
-                          <NavLink to="/snackbar">Snackbar</NavLink>
                           <NavLink to="/tooltip">Tooltip</NavLink><br />
+                          <NavLink to="/snackbar">Snackbar</NavLink>
                         </div>
                       </div>
 
-                      <br />
+                      <br /><br />
                     </div>
                 </div>
 
@@ -115,4 +115,4 @@ class Sidenav extends Component{
 }
 
 
-export default Sidenav;
+export default StylesSidenav;
