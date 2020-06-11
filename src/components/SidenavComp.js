@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import '../fluent.css';
-import '../app.css';
+import '../App.css';
 import { NavLink } from "react-router-dom";
 
 class Sidenav extends Component{
