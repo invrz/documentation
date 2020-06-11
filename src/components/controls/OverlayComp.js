@@ -32,7 +32,7 @@ class Overlay extends Component{
                 </p>
                 <div className="page_container outline">
                   <div class="overlay_container center">
-                    <img src={Example} class="overlay_content" />
+                    <img src={Example} class="overlay_content" alt="Overlay Example Image" />
                     <div class="overlay">
                         <br /><h6 className="ta_center">This Is Some Example Overlay Info</h6>
                     </div>
@@ -44,7 +44,7 @@ class Overlay extends Component{
                 <div className="code_content enabled page_container">
                         <pre className="codeblock_text">
                         &lt;div class="overlay_container center"&gt;  <br />
-                        &nbsp;&nbsp;&lt;img src="path_to_your_image" class="overlay_content" /&gt;<br />
+                        &nbsp;&nbsp;&lt;img src="path_to_your_image" class="overlay_content" alt="Overlay Example Image" /&gt;<br />
                         &nbsp;&nbsp;&lt;div class="overlay"&gt;<br />
                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;&lt;h6 className="ta_center"&gt;This Is Some Example Overlay Info&lt;/h6&gt;<br />
                         &nbsp;&nbsp;&lt;/div&gt;<br />
