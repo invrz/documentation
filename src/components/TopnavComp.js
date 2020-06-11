@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import '../fluent.css';
 import '../icons.css';
-import '../app.css';
+import '../App.css';
 import { NavLink } from "react-router-dom";
 
 
