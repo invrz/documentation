@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/documentation/static/css/main.d5308c3b.chunk.css",
+    "main.js": "/documentation/static/js/main.5e1d1ef0.chunk.js",
+    "main.js.map": "/documentation/static/js/main.5e1d1ef0.chunk.js.map",
+    "runtime-main.js": "/documentation/static/js/runtime-main.aff0b672.js",
+    "runtime-main.js.map": "/documentation/static/js/runtime-main.aff0b672.js.map",
+    "static/js/2.f5b8cfb8.chunk.js": "/documentation/static/js/2.f5b8cfb8.chunk.js",
+    "static/js/2.f5b8cfb8.chunk.js.map": "/documentation/static/js/2.f5b8cfb8.chunk.js.map",
+    "index.html": "/documentation/index.html",
+    "precache-manifest.861327b3466b87ad3f54b7487ea414a5.js": "/documentation/precache-manifest.861327b3466b87ad3f54b7487ea414a5.js",
+    "service-worker.js": "/documentation/service-worker.js",
+    "static/css/main.d5308c3b.chunk.css.map": "/documentation/static/css/main.d5308c3b.chunk.css.map",
+    "static/js/2.f5b8cfb8.chunk.js.LICENSE.txt": "/documentation/static/js/2.f5b8cfb8.chunk.js.LICENSE.txt",
+    "static/media/overlay_example.png": "/documentation/static/media/overlay_example.73695619.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aff0b672.js",
+    "static/js/2.f5b8cfb8.chunk.js",
+    "static/css/main.d5308c3b.chunk.css",
+    "static/js/main.5e1d1ef0.chunk.js"
+  ]
+}
