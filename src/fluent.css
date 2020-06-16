@@ -504,7 +504,7 @@ input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
 .drop_container .drop:checked ~ .opt_group{display: block; z-index: 2;}
 
 
-ul.dropdown{width: 200px; z-index: 1; display: block; position: absolute;}
+ul.dropdown{width: 200px; z-index: 1; display: block;}
 
 ul.dropdown li{display: none;}
 

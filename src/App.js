@@ -23,6 +23,10 @@ import Window from "./components/controls/WindowComp";
 import SidePanel from "./components/controls/SidePanelComp";
 import Overlay from "./components/controls/OverlayComp";
 import DialogueBox from "./components/controls/DialogueBoxComp";
+import Button from "./components/controls/ButtonComp";
+import Dropdown from "./components/controls/DropdownComp";
+import Snackbar from "./components/controls/SnackbarComp";
+import Tooltip from "./components/controls/TooltipComp";
 
 class App extends Component{
   
@@ -51,6 +55,10 @@ class App extends Component{
             <Route path="/sidepanel" component={SidePanel} />
             <Route path="/overlay" component={Overlay} />
             <Route path="/d_box" component={DialogueBox} />
+            <Route path="/buttons" component={Button} />
+            <Route path="/dropdown" component={Dropdown} />
+            <Route path="/snackbar" component={Snackbar} />
+            <Route path="/tooltip" component={Tooltip} />
           </Switch>
         </Router>
     );
