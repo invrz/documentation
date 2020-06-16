@@ -3,16 +3,9 @@ import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
+import { NavLink } from "react-router-dom";
 
-
-function ShowWindow(){
-  document.getElementById("mod1").style.display=("block");
-}
-function HideWindow(){
-  document.getElementById("mod1").style.display=("none");
-}
-
-class Window extends Component{
+class Snackbar extends Component{
   
   render(){
     return(
@@ -21,79 +14,65 @@ class Window extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />
-            <h6>Window</h6>
+            <h6>Snackbar</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Windows are temporary, Window UI overlay that generally provide contextual app information or require user confirmation/input, 
-                  or can be used to advertise new app features. In some cases, Windows block interactions with the web page or application until 
-                  being explicitly dismissed. They can be used for lightweight creation or edit tasks and simple management tasks, or for hosting 
-                  heavier temporary content.                
+                Snackbars inform users of a process that an app has performed or will perform. They appear temporarily, 
+                towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require 
+                user input to disappear.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  With current Support with Fluent Design for Web, you can make upto 5 Windows without adding any additional JavaScript.
+                  With current Support with Fluent Design for Web, you can make as many snackbars as you want in a page and 
+                  they disappear after 5 seconds. Snackbars normally appear on bottom-left part of the screen.
                 </p>
                 <div className="page_container outline">
-                  <button onClick={ShowWindow} className="primary_white dlevel1">Click to Show Window</button>
+                  <div className="snackbar_container">
+                    <button className="snackbar_button small primary_white dlevel2">Click to open Snackbar</button>
+                    <span className="snackbar_content box">This is Some Snackbar Content</span>
+                  </div>
+                  <div className="snackbar_container">
+                    <button className="snackbar_button small primary_white dlevel2">Click to open another Snackbar</button>
+                    <span className="snackbar_content primary_inverted">This is Inverted Snackbar Content</span>
+                  </div>
                 </div>
                 <p>
-                  The language-markup to get the Button part of the output
+                  The language-markup to get the above output
                 </p>
                 <div className="code_content enabled page_container">
-                        <pre className="codeblock_text">
-    &lt;button class="primary_white dlevel1" onclick="openmod1();"&gt;Open Window&lt;/button&gt;<br />
-                        </pre>
-                </div>
-                <p>
-                  The language-markup to get the Window part of the output
-                </p>
-                <div className="code_content enabled page_container">
-                        <pre className="codeblock_text">
-                          &lt;div class="modal_container" id="mod1"&gt;  <br />
-                          &nbsp;&nbsp;&lt;div class="modal_content zi3"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="dialogue_pane large12"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="primary_red right ta_center mod_close_btn" onclick="closemod1();"&gt;X&lt;/button&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="page_container"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;This Is Some Content&lt;/h2&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &lt;/div&gt;  <br />
-                        </pre>
+                      <pre className="codeblock_text">
+                        &lt;div className="snackbar_container"&gt;  <br />
+                        &nbsp;&nbsp;&lt;button className="snackbar_button small primary_white dlevel2"&gt;Click to open Snackbar&lt;/button&gt;  <br />
+                        &nbsp;&nbsp;&lt;span className="snackbar_content box"&gt;This is Some Snackbar Content&lt;/span&gt;  <br />
+                        &lt;/div&gt;  <br />  <br />
+                        &lt;div className="snackbar_container"&gt;  <br />
+                        &nbsp;&nbsp;&lt;button className="snackbar_button small primary_white dlevel2"&gt;Click to open another Snackbar&lt;/button&gt;  <br />
+                        &nbsp;&nbsp;&lt;span className="snackbar_content box"&gt;This is Some More Snackbar Content&lt;/span&gt;  <br />
+                        &lt;/div&gt;
+                      </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Extending on Usage</p>
                 <p>
-                  Without adding additional JavaScript anyone can make 5 Windows per page. The only thing to follow is keep id for modal as 
-                  mod1, mod2, mod3, mod4, mod5 and call [openmod1()~openmod5] and [openmod1()~openmod5] functions respectively.
+                  Snackbars can be used to notify users when they take any action, in this case clicking a button. It can be 
+                  used for many other purposes also and can be used to give alerts also. In Fluent Design for web, calling for 
+                  one Snackbar replaces any other Snackbar if present.
                 </p>
             </div><br /><br />
+
         </main>
         <Footer />
-        <div class="modal_container" id="mod1">
-          <div class="modal_content zi3">
-              <div class="dialogue_pane large12">
-                  <div class="modal_title left">This is the Window Title</div>
-                  <button class="primary_red right ta_center mod_close_btn" onClick={HideWindow}>X</button>
-              </div>
-              <div class="page_container">
-                  <h2>This Is Modal Content</h2>
-              </div>
-          </div>
-        </div>
-
       </div>
     );
   }
 
 }
 
-
-export default Window;
+export default Snackbar;

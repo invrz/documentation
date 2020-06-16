@@ -33,7 +33,7 @@ class Dropdown extends Component{
                 </p>
                 <div className="page_container outline">
                   <div className="dropdown_container">
-                    <button className="dropdown_btn primary_red">Dropdown</button>
+                    <button className="dropdown_btn primary_white">Dropdown</button>
                     <ul className="dropdown_items dlevel2">
                       <NavLink to="#">Item 1s</NavLink>
                       <NavLink to="#">Item 2s</NavLink>
@@ -49,7 +49,7 @@ class Dropdown extends Component{
                 <div className="code_content enabled page_container">
                       <pre className="codeblock_text">
                           &lt;div className="dropdown_container"&gt;  <br />
-                          &nbsp;&nbsp;&lt;button className="dropdown_btn primary_red"&lt;Dropdown&lt;/button&gt;  <br />
+                          &nbsp;&nbsp;&lt;button className="dropdown_btn primary_white"&lt;Dropdown&lt;/button&gt;  <br />
                           &nbsp;&nbsp;&lt;ul className="dropdown_items dlevel2"&gt;  <br />
                           &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 1s&lt;/a&gt;  <br />
                           &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 2s&lt;/a&gt;  <br />
