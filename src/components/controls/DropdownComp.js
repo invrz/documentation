@@ -3,16 +3,9 @@ import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
+import { NavLink } from "react-router-dom";
 
-
-function ShowWindow(){
-  document.getElementById("mod1").style.display=("block");
-}
-function HideWindow(){
-  document.getElementById("mod1").style.display=("none");
-}
-
-class Window extends Component{
+class Dropdown extends Component{
   
   render(){
     return(
@@ -21,79 +14,68 @@ class Window extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />
-            <h6>Window</h6>
+            <h6>Dropdown</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Windows are temporary, Window UI overlay that generally provide contextual app information or require user confirmation/input, 
-                  or can be used to advertise new app features. In some cases, Windows block interactions with the web page or application until 
-                  being explicitly dismissed. They can be used for lightweight creation or edit tasks and simple management tasks, or for hosting 
-                  heavier temporary content.                
+                  A Dropdown is a list in which the selected item is always visible, and the others 
+                  are visible on demand by hovering over a drop-down button. They are used to simplify 
+                  the design and make a choice within the UI. When closed, only the selected item 
+                  is visible. When users hover over the drop-down button, all the options become visible. 
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  With current Support with Fluent Design for Web, you can make upto 5 Windows without adding any additional JavaScript.
+                  With current Support with Fluent Design for Web, you can make dropdowns over any UI Component without adding any additional JavaScript.
                 </p>
                 <div className="page_container outline">
-                  <button onClick={ShowWindow} className="primary_white dlevel1">Click to Show Window</button>
+                  <div className="dropdown_container">
+                    <button className="dropdown_btn primary_red">Dropdown</button>
+                    <ul className="dropdown_items dlevel2">
+                      <NavLink to="#">Item 1s</NavLink>
+                      <NavLink to="#">Item 2s</NavLink>
+                      <NavLink to="#">Item 3s</NavLink>
+                      <NavLink to="#">Item 4s</NavLink>
+                      <NavLink to="#">Item 5s</NavLink>
+                    </ul>
+                  </div>
                 </div>
                 <p>
-                  The language-markup to get the Button part of the output
+                  The language-markup to get the above output
                 </p>
                 <div className="code_content enabled page_container">
-                        <pre className="codeblock_text">
-    &lt;button class="primary_white dlevel1" onclick="openmod1();"&gt;Open Window&lt;/button&gt;<br />
-                        </pre>
-                </div>
-                <p>
-                  The language-markup to get the Window part of the output
-                </p>
-                <div className="code_content enabled page_container">
-                        <pre className="codeblock_text">
-                          &lt;div class="modal_container" id="mod1"&gt;  <br />
-                          &nbsp;&nbsp;&lt;div class="modal_content zi3"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="dialogue_pane large12"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="primary_red right ta_center mod_close_btn" onclick="closemod1();"&gt;X&lt;/button&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="page_container"&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;This Is Some Content&lt;/h2&gt;  <br />
-                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &nbsp;&nbsp;&lt;/div&gt;  <br />
-                          &lt;/div&gt;  <br />
-                        </pre>
+                      <pre className="codeblock_text">
+                          &lt;div className="dropdown_container"&gt;  <br />
+                          &nbsp;&nbsp;&lt;button className="dropdown_btn primary_red"&lt;Dropdown&lt;/button&gt;  <br />
+                          &nbsp;&nbsp;&lt;ul className="dropdown_items dlevel2"&gt;  <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 1s&lt;/a&gt;  <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 2s&lt;/a&gt;  <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 3s&lt;/a&gt;  <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 4s&lt;/a&gt;  <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 5s&lt;/a&gt;  <br />
+                          &nbsp;&nbsp;&lt;/ul&gt;  <br />
+                          &lt;/div&gt;
+                      </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Extending on Usage</p>
                 <p>
-                  Without adding additional JavaScript anyone can make 5 Windows per page. The only thing to follow is keep id for modal as 
-                  mod1, mod2, mod3, mod4, mod5 and call [openmod1()~openmod5] and [openmod1()~openmod5] functions respectively.
+                  Usage of Dropdowns is not only limited to Menu(s), but they can be used with any Navigation Component as long as you want to give 
+                  some options regarding any item.
                 </p>
             </div><br /><br />
+
         </main>
         <Footer />
-        <div class="modal_container" id="mod1">
-          <div class="modal_content zi3">
-              <div class="dialogue_pane large12">
-                  <div class="modal_title left">This is the Window Title</div>
-                  <button class="primary_red right ta_center mod_close_btn" onClick={HideWindow}>X</button>
-              </div>
-              <div class="page_container">
-                  <h2>This Is Modal Content</h2>
-              </div>
-          </div>
-        </div>
-
       </div>
     );
   }
 
 }
 
-
-export default Window;
+export default Dropdown;
