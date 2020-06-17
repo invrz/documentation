@@ -3,7 +3,6 @@ import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
-import { NavLink } from "react-router-dom";
 
 class Tables extends Component{
   

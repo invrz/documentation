@@ -836,6 +836,7 @@ th:hover{opacity: 0.8;}
     opacity: 0;
     margin-top: -3.5vh;
     margin-left: -10px;
+    background: #fcfcfc;
 }
 .tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 12px; padding: 8px; overflow-y: auto;}
 
