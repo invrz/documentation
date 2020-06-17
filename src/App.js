@@ -27,6 +27,9 @@ import Button from "./components/controls/ButtonComp";
 import Dropdown from "./components/controls/DropdownComp";
 import Snackbar from "./components/controls/SnackbarComp";
 import Tooltip from "./components/controls/TooltipComp";
+import OList from "./components/controls/OListComp";
+import UList from "./components/controls/UListComp";
+import Tables from "./components/controls/TablesComp";
 
 class App extends Component{
   
@@ -59,6 +62,9 @@ class App extends Component{
             <Route path="/dropdown" component={Dropdown} />
             <Route path="/snackbar" component={Snackbar} />
             <Route path="/tooltip" component={Tooltip} />
+            <Route path="/olist" component={OList} />
+            <Route path="/ulist" component={UList} />
+            <Route path="/tables" component={Tables} />
           </Switch>
         </Router>
     );

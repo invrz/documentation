@@ -689,17 +689,19 @@ ol li::before{
     content: counter(fluent-counter)".";
     padding-right: 20px;
 }
-li:nth-child(odd) {background-color: rgba(0, 0, 0, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:nth-child(even) {background-color:  rgba(255, 255, 255, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
+li:nth-child(odd) {background-color: #fafafa; color: #1e1e1e;}
+li:nth-child(even) {background-color:  #dadada; color: #1e1e1e;}
+li:hover{border-left: 2px solid #000; transition: 200ms; background: #fcfcfc;}
 
 /*Tables*/
 .table_container{overflow-x: auto; display: block;}
-table{border-collapse: collapse; border:none; width: 90%;}
-th,td{padding:10px; border-radius: 0px;}
-tr:nth-child(odd){background: rgba(0, 0, 0, 0.1);}
-tr:nth-child(even){background: rgba(255, 255, 255, 0.1);}
-tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 0, 0, 0.8);}
+table{border-collapse: collapse; border:none; width: auto;}
+th,td{padding:10px; border-radius: 0px; min-width: 120px;}
+tr:nth-child(odd){background: #fcfcfc;}
+tr:nth-child(even){background: #ececec;}
+td:hover{transition: 200ms; background: #dcdcdc; color:#1e1e1e}
+th{text-align: left;}
+th:hover{opacity: 0.8;}
 
 /*Progress*/
 .simple_progress_bar{
@@ -1009,7 +1011,7 @@ li{font-size: 14px;}
     padding: 20px;
     background: #e1519133;
     color: #0e0e0e;
-    font-family: 'Consolas', 'Roboto';
+    font-family: 'Source Sans Pro', 'Consolas', 'Roboto';
     text-align: left;
     overflow-x: scroll;
     border-radius: 10px;
