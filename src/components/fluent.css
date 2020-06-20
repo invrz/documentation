@@ -347,7 +347,7 @@ nav .nav_content{
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.transparent{background: transparent; color:#999;}
+.transparent{background: transparent; color:#232323;}
 .primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
 .primary_red{background: #cc2936; color:#FFF;}
@@ -432,15 +432,17 @@ button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
 
 /*Inputs*/
 
+
 input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],
 input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-    width: 80%;
-    padding: 2%;
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
+    width: 360px;
+    max-width: 80%;
+    padding: 8px;
+    border: 1.5px solid #3e3e3e;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 input[type=text]:hover,input[type=password]:hover,input[type=tel]:hover,input[type=number]:hover,
@@ -451,7 +453,11 @@ input[type=text]:focus,input[type=password]:focus,input[type=tel]:focus,input[ty
 input[type=email]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=month]:focus,input[type=search]:focus{
     border: 1.5px solid rgba(6, 167, 221, 1);
 }
-
+input.btm_brdr, input.btm_brdr:hover, input.btm_brdr:focus{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
 .search_box{
     display:block;
     width: 80%;
@@ -689,17 +695,19 @@ ol li::before{
     content: counter(fluent-counter)".";
     padding-right: 20px;
 }
-li:nth-child(odd) {background-color: rgba(0, 0, 0, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:nth-child(even) {background-color:  rgba(255, 255, 255, 0.1); color: #000; backdrop-filter: blur(90px);}
-li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
+li:nth-child(odd) {background-color: #fafafa; color: #1e1e1e;}
+li:nth-child(even) {background-color:  #dadada; color: #1e1e1e;}
+li:hover{border-left: 2px solid #000; transition: 200ms; background: #fcfcfc;}
 
 /*Tables*/
 .table_container{overflow-x: auto; display: block;}
-table{border-collapse: collapse; border:none; width: 90%;}
-th,td{padding:10px; border-radius: 0px;}
-tr:nth-child(odd){background: rgba(0, 0, 0, 0.1);}
-tr:nth-child(even){background: rgba(255, 255, 255, 0.1);}
-tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 0, 0, 0.8);}
+table{border-collapse: collapse; border:none; width: auto;}
+th,td{padding:10px; border-radius: 0px; min-width: 120px;}
+tr:nth-child(odd){background: #fcfcfc;}
+tr:nth-child(even){background: #ececec;}
+td:hover{transition: 200ms; background: #dcdcdc; color:#1e1e1e}
+th{text-align: left;}
+th:hover{opacity: 0.8;}
 
 /*Progress*/
 .simple_progress_bar{
@@ -834,6 +842,7 @@ tr:hover{transition: 200ms; background: rgba(200, 200, 200, 0.6); color:rgba(0, 
     opacity: 0;
     margin-top: -3.5vh;
     margin-left: -10px;
+    background: #fcfcfc;
 }
 .tooltip_container:hover .tooltip_info{opacity: 1; width: auto; height: auto; font-size: 12px; padding: 8px; overflow-y: auto;}
 
@@ -1009,7 +1018,7 @@ li{font-size: 14px;}
     padding: 20px;
     background: #e1519133;
     color: #0e0e0e;
-    font-family: 'Consolas', 'Roboto';
+    font-family: 'Source Sans Pro', 'Consolas', 'Roboto';
     text-align: left;
     overflow-x: scroll;
     border-radius: 10px;
@@ -1069,12 +1078,11 @@ img.square{
 
     input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],.drop:hover,
     input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-        width: 80%;
         border: 1.5px solid rgba(0, 0, 0, 0.4);
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        font-size: 14px;
+        font-size: 18px;
         background: #000000;
         color: #fcfcfc;
         height: 40px;

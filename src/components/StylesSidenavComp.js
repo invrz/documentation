@@ -59,7 +59,7 @@ class StylesSidenav extends Component{
                         <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Lists and Tables</div>
                         <div className="nav_group">
                           <NavLink to="/olist">Ordered Lists</NavLink><br />
-                          <NavLink to="/tables">Iables</NavLink><br />
+                          <NavLink to="/tables">Tables</NavLink><br />
                           <NavLink to="/ulist">Unordered Lists</NavLink>
                         </div>
                       </div>
