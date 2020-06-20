@@ -30,6 +30,14 @@ import Tooltip from "./components/controls/TooltipComp";
 import OList from "./components/controls/OListComp";
 import UList from "./components/controls/UListComp";
 import Tables from "./components/controls/TablesComp";
+import TextInput from "./components/controls/TextInputComp";
+import TelInput from "./components/controls/TelInputComp";
+import PasswordInput from "./components/controls/PasswordInputComp";
+import NumberInput from "./components/controls/NumberInputComp";
+import EmailInput from "./components/controls/EmailInputComp";
+import DateInput from "./components/controls/DateInputComp";
+import DateTimeInput from "./components/controls/DateTimeInputComp";
+import MonthInput from "./components/controls/MonthInputComp";
 
 class App extends Component{
   
@@ -65,6 +73,15 @@ class App extends Component{
             <Route path="/olist" component={OList} />
             <Route path="/ulist" component={UList} />
             <Route path="/tables" component={Tables} />
+            <Route path="/text_input" component={TextInput} />
+            <Route path="/tel_input" component={TelInput} />
+            <Route path="/pass_input" component={PasswordInput} />
+            <Route path="/num_input" component={NumberInput} />
+            <Route path="/email_input" component={EmailInput} />
+            <Route path="/date_input" component={DateInput} />
+            <Route path="/date_time_input" component={DateTimeInput} />
+            <Route path="/month_input" component={MonthInput} />
+            
           </Switch>
         </Router>
     );

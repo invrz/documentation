@@ -347,7 +347,7 @@ nav .nav_content{
 .zi4:hover{box-shadow:  12px 0 24px 0 rgba(0, 0, 0, 0.4), 0 6px 18px 0 rgba(0, 0, 0, 0.38); transition: 250ms;}
 
 /*Colors*/
-.transparent{background: transparent; color:#999;}
+.transparent{background: transparent; color:#232323;}
 .primary_blue{background: #0065AF; color:#FFF;}
 .primary_green{background: #28B85B; color:#FFF;}
 .primary_red{background: #cc2936; color:#FFF;}
@@ -432,15 +432,17 @@ button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
 
 /*Inputs*/
 
+
 input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],
 input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-    width: 80%;
-    padding: 2%;
-    border: 1.5px solid rgba(0, 0, 0, 0.4);
+    width: 360px;
+    max-width: 80%;
+    padding: 8px;
+    border: 1.5px solid #3e3e3e;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 input[type=text]:hover,input[type=password]:hover,input[type=tel]:hover,input[type=number]:hover,
@@ -451,7 +453,11 @@ input[type=text]:focus,input[type=password]:focus,input[type=tel]:focus,input[ty
 input[type=email]:focus,input[type=date]:focus,input[type=datetime-local]:focus,input[type=month]:focus,input[type=search]:focus{
     border: 1.5px solid rgba(6, 167, 221, 1);
 }
-
+input.btm_brdr, input.btm_brdr:hover, input.btm_brdr:focus{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
 .search_box{
     display:block;
     width: 80%;
@@ -1072,12 +1078,11 @@ img.square{
 
     input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],.drop:hover,
     input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
-        width: 80%;
         border: 1.5px solid rgba(0, 0, 0, 0.4);
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        font-size: 14px;
+        font-size: 18px;
         background: #000000;
         color: #fcfcfc;
         height: 40px;

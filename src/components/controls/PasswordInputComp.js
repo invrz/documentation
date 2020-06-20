@@ -3,9 +3,8 @@ import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
-import { NavLink } from "react-router-dom";
 
-class UList extends Component{
+class PasswordInput extends Component{
   
   render(){
     return(
@@ -14,51 +13,76 @@ class UList extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />
-            <h6>List</h6>
+            <h6>Password Input</h6>
             <br />
             <div className="page_container primary_white zi2">
-                <p className="title bold">Unordered Lists</p>
+                <p className="title bold">Overview</p>
                 <p>
-                  An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag. 
-                  unordered lists are bulleted in nature.
+                  Passwords are integral part of most of the website(s)/webapp(s). Passwords help user authenticate, secure, and 
+                  access their account.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  To make an unordered List, just add an "ul" tag and "li" tag to add items.
+                  When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
+                  input of type Password gives a prestyled Password Input field.
                 </p>
                 <div className="page_container outline">
-                  <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                  </ul>
+                  <input type="password" placeholder="Give a Password" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
                 <div className="code_content enabled page_container">
                       <pre className="codeblock_text">
-                        &lt;ul&gt;  <br />
-                        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;  <br />
-                        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;  <br />
-                        &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;  <br />
-                        &nbsp;&nbsp;&lt;li&gt;Item 4&lt;/li&gt;  <br />
-                        &nbsp;&nbsp;&lt;li&gt;Item 5&lt;/li&gt;  <br />
-                        &lt;/ul&gt;
+                        &lt;input type="password" placeholder="Give a Password" /&gt;
                       </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
-                <p className="title bold">Extending on Usage</p>
+                <p className="title bold">Only Bottom Border</p>
                 <p>
-                  Unordered Lists can be used in many ways, maybe to display a list of requirements or maybe combine with other 
-                  UI Components to make even complex lists like contact cards, activity overview, notifications and much more.
+                  To make a Password Input field which only has a bottom border add a class="btm_brdr" 
+                </p>
+                <div className="page_container outline">
+                  <input type="password" placeholder="Give a Password" className="btm_brdr" />
+                </div>
+                <p>
+                  The language-markup to get the above output
+                </p>
+                <div className="code_content enabled page_container">
+                      <pre className="codeblock_text">
+                        &lt;input type="password" placeholder="Give a Password" class="btm_brdr" /&gt;
+                      </pre>
+                </div>
+            </div><br /><br />
+
+            <div className="page_container primary_white zi2">
+                <p className="title bold">Transparent Background</p>
+                <p>
+                  To make a Password Input field which has transparent background add class="transparent" 
+                </p>
+                <div className="page_container outline">
+                  <input type="password" placeholder="Give a Password" className="btm_brdr transparent" />
+                </div>
+                <p>
+                  The language-markup to get the above output
+                </p>
+                <div className="code_content enabled page_container">
+                      <pre className="codeblock_text">
+                        &lt;input type="password" placeholder="Give a Password" class="btm_brdr transparent" /&gt;
+                      </pre>
+                </div>
+            </div><br /><br />
+
+            <div className="page_container primary_white zi2">
+                <p className="title bold">Best Pactices</p>
+                <p>
+                  If you are making an Password Input which has all the four borders it is recommended to place the label on top 
+                  of input tag. And if you are implementing a Bottom Border only Password Input place the label below the input tag. 
                 </p>
             </div><br /><br />
 
@@ -70,4 +94,4 @@ class UList extends Component{
 
 }
 
-export default UList;
+export default PasswordInput;
