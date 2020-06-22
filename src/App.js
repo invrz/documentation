@@ -38,6 +38,8 @@ import EmailInput from "./components/controls/EmailInputComp";
 import DateInput from "./components/controls/DateInputComp";
 import DateTimeInput from "./components/controls/DateTimeInputComp";
 import MonthInput from "./components/controls/MonthInputComp";
+import Range from "./components/controls/RangeComp";
+import RadioInput from "./components/controls/RadioInputComp";
 
 class App extends Component{
   
@@ -81,6 +83,8 @@ class App extends Component{
             <Route path="/date_input" component={DateInput} />
             <Route path="/date_time_input" component={DateTimeInput} />
             <Route path="/month_input" component={MonthInput} />
+            <Route path="/range" component={Range} />
+            <Route path="/radio" component={RadioInput} />
             
           </Switch>
         </Router>

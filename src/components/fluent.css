@@ -548,14 +548,15 @@ input[type=range]{
     -moz-appearance: none;
     width: 100%;
     background: rgba(125, 125, 125, 0.4);
-    height: 1%;
+    height: 6px;
+    border-radius: 90px;
 }
 input[type=range]:hover{background: rgba(125, 125, 125, 0.6);}
 
 input[type=range]::-moz-range-thumb{
     -moz-appearance: none;
-    height: 24px;
-    width: 8px;
+    height: 26px;
+    width: 10px;
     border-radius: 100px;
     background: rgba(6, 167, 221, 1);
 }
@@ -567,7 +568,7 @@ input[type=range]::-webkit-slider-thumb{
     border-radius: 100px;
     background: rgba(6, 167, 221, 1);
 }
-input[type=range]:active::-webkit-slider-thumb{background: rgba(125, 125, 125, 0.6);}
+input[type=range]:active::-webkit-slider-thumb{background: #3C3C3C;}
 input[type=range]::-ms-thumb{
     -ms-appearance: none;
     appearance: none;
@@ -588,8 +589,8 @@ input[type=radio],.radioinfo{
     background: #FFF;
     border-radius: 90px;
     border:2px solid #000;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 5px;
+    margin-bottom: -5px;
 }
 input[type=radio]:hover{background: rgba(125, 125, 125, 0.6);}
 input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF; box-shadow: 0px 0px 2px 2px #06A7DD}
