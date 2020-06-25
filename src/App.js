@@ -38,6 +38,14 @@ import EmailInput from "./components/controls/EmailInputComp";
 import DateInput from "./components/controls/DateInputComp";
 import DateTimeInput from "./components/controls/DateTimeInputComp";
 import MonthInput from "./components/controls/MonthInputComp";
+import Range from "./components/controls/RangeComp";
+import RadioInput from "./components/controls/RadioInputComp";
+import ToggleSwitch from "./components/controls/SwitchComp";
+import TextArea from "./components/controls/TextareaComp";
+import Checkbox from "./components/controls/CheckboxComp";
+import Searchbox from "./components/controls/SearchboxComp";
+import Select from "./components/controls/SelectComp";
+import AdvSelect from "./components/controls/AdvancedSelectComp";
 
 class App extends Component{
   
@@ -81,7 +89,16 @@ class App extends Component{
             <Route path="/date_input" component={DateInput} />
             <Route path="/date_time_input" component={DateTimeInput} />
             <Route path="/month_input" component={MonthInput} />
+            <Route path="/range" component={Range} />
+            <Route path="/radio" component={RadioInput} />
+            <Route path="/switch" component={ToggleSwitch} />
+            <Route path="/textarea" component={TextArea} />
+            <Route path="/checkbox" component={Checkbox} />
+            <Route path="/searchbox" component={Searchbox} />
+            <Route path="/select" component={Select} />
+            <Route path="/adv_select" component={AdvSelect} />
             
+
           </Switch>
         </Router>
     );
