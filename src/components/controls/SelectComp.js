@@ -4,7 +4,7 @@ import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class ToggleSwitch extends Component{
+class Select extends Component{
   
   render(){
     return(
@@ -13,27 +13,28 @@ class ToggleSwitch extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />
-            <h6>Toggle Switch</h6>
+            <h6>Select</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Toggle Switches is a graphical control element that allows the user to choose one from a predefined set of options. 
-                  It is used as a button, the content of which changes with each click and cycles between two or more values; 
-                  the on or off state displays value which is the user's choice.
+                  Select is used to provide user with a basic dropdown list of items through which one item can be selected.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  Implementing Toggle Switches in Fluent Design for Web is easy and can be done just by using HTML and Fluent Classes.
+                  Implementing Select in Fluent Design for Web is easy and can be done just by using HTML provides with prestyled Select menu.
                 </p>
                 <div className="page_container outline">
-                  <div class="switch">
-                    <input type="checkbox" />
-                    <span class="toggle"></span>
-                  </div>
+                  <select>
+                    <option>Select an Option</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                  </select>
                   <br />
                 </div>
                 <p>
@@ -41,10 +42,13 @@ class ToggleSwitch extends Component{
                 </p>
                 <div className="code_content enabled page_container">
                       <pre className="codeblock_text">
-                      &lt;div class="switch"&gt; <br />
-                      &nbsp;&nbsp;&lt;input type="checkbox" /&gt; <br />
-                      &nbsp;&nbsp;&lt;span class="toggle"&gt;&lt;/span&gt; <br />
-                      &lt;/div&gt;
+                      &lt;select&gt; <br />
+                      &nbsp;&nbsp;&lt;option&gt;Select an Option&lt;/option&gt; <br />
+                      &nbsp;&nbsp;&lt;option&gt;Option 1&lt;/option&gt; <br />
+                      &nbsp;&nbsp;&lt;option&gt;Option 2&lt;/option&gt; <br />
+                      &nbsp;&nbsp;&lt;option&gt;Option 3&lt;/option&gt; <br />
+                      &nbsp;&nbsp;&lt;option&gt;Option 4&lt;/option&gt; <br />
+                      &lt;/select&gt;
                       </pre>
                 </div>
             </div><br /><br />
@@ -58,4 +62,4 @@ class ToggleSwitch extends Component{
 
 }
 
-export default ToggleSwitch;
+export default Select;

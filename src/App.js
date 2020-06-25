@@ -42,6 +42,10 @@ import Range from "./components/controls/RangeComp";
 import RadioInput from "./components/controls/RadioInputComp";
 import ToggleSwitch from "./components/controls/SwitchComp";
 import TextArea from "./components/controls/TextareaComp";
+import Checkbox from "./components/controls/CheckboxComp";
+import Searchbox from "./components/controls/SearchboxComp";
+import Select from "./components/controls/SelectComp";
+import AdvSelect from "./components/controls/AdvancedSelectComp";
 
 class App extends Component{
   
@@ -89,7 +93,12 @@ class App extends Component{
             <Route path="/radio" component={RadioInput} />
             <Route path="/switch" component={ToggleSwitch} />
             <Route path="/textarea" component={TextArea} />
+            <Route path="/checkbox" component={Checkbox} />
+            <Route path="/searchbox" component={Searchbox} />
+            <Route path="/select" component={Select} />
+            <Route path="/adv_select" component={AdvSelect} />
             
+
           </Switch>
         </Router>
     );
