@@ -601,7 +601,7 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     width: 0px;
     height: 0px;
     background: #eee;
-    border-radius: 90px;
+    border-radius: 10px;
     opacity: 1;
 }
 
@@ -1086,7 +1086,8 @@ img.square{
         font-size: 18px;
         background: #000000;
         color: #fcfcfc;
-        height: 40px;
+        height: 36px;
+        line-height: 1.2;
     }
 
 

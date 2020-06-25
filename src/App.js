@@ -40,6 +40,8 @@ import DateTimeInput from "./components/controls/DateTimeInputComp";
 import MonthInput from "./components/controls/MonthInputComp";
 import Range from "./components/controls/RangeComp";
 import RadioInput from "./components/controls/RadioInputComp";
+import ToggleSwitch from "./components/controls/SwitchComp";
+import TextArea from "./components/controls/TextareaComp";
 
 class App extends Component{
   
@@ -85,6 +87,8 @@ class App extends Component{
             <Route path="/month_input" component={MonthInput} />
             <Route path="/range" component={Range} />
             <Route path="/radio" component={RadioInput} />
+            <Route path="/switch" component={ToggleSwitch} />
+            <Route path="/textarea" component={TextArea} />
             
           </Switch>
         </Router>

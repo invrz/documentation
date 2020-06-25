@@ -4,7 +4,7 @@ import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class TextInput extends Component{
+class TextArea extends Component{
   
   render(){
     return(
@@ -95,4 +95,4 @@ class TextInput extends Component{
 
 }
 
-export default TextInput;
+export default TextArea;

@@ -4,7 +4,7 @@ import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class TextInput extends Component{
+class ToggleSwitch extends Component{
   
   render(){
     return(
@@ -13,25 +13,27 @@ class TextInput extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12">
             <br />
             <br />
-            <h6>Text Input</h6>
+            <h6>Toggle Switch</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Text Inputs are very important part of any website/webapp. They are generally used to accept any type of 
-                  text information a user wants to feed in the website. It is normally used to accept single line or a few 
-                  words of text. 
+                  Toggle Switches is a graphical control element that allows the user to choose one from a predefined set of options. 
+                  It is used as a button, the content of which changes with each click and cycles between two or more values; 
+                  the on or off state displays value which is the user's choice.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
-                  input of type text gives a prestyled Text Input field.
+                  Implementing Toggle Switches in Fluent Design for Web is easy and can be done just by using HTML and Fluent Classes.
                 </p>
                 <div className="page_container outline">
-                  <input type="text" placeholder="Enter text here" />
+                  <div class="switch">
+                            <input type="checkbox" checked="" />
+                            <span class="toggle"></span>
+                  </div>
                 </div>
                 <p>
                   The language-markup to get the above output
@@ -95,4 +97,4 @@ class TextInput extends Component{
 
 }
 
-export default TextInput;
+export default ToggleSwitch;
