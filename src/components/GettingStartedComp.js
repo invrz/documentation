@@ -77,6 +77,7 @@ class GettingStarted extends Component{
                 <p className="title bold">Extending on Usage</p>
                 <p>
                     You can go through the following links to know more about the classes which Fluent Design for Web has and how to use them in your website.<br /><br />
+                    <NavLink to="/boilerplate">Boilerplate</NavLink><br />
                     <NavLink to="/styles">Styles</NavLink><br />
                     <NavLink to="/controls">Controls</NavLink><br />
                     <NavLink to="/iconpack">Icons</NavLink><br />

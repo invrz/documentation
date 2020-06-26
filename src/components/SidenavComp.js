@@ -46,7 +46,7 @@ class Sidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/range">Range</NavLink><br />
                           <NavLink to="/radio">Radio</NavLink><br />
-                          <NavLink to="/swith">Switch</NavLink><br />
+                          <NavLink to="/switch">Switch</NavLink><br />
                           <NavLink to="/textarea">Textarea</NavLink><br />
                           <NavLink to="/checkbox">Checkbox</NavLink><br />
                           <NavLink to="/searchbox">Searchbox</NavLink><br />

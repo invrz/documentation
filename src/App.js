@@ -5,6 +5,7 @@ import './fluent.css';
 
 import Topnav from "./components/TopnavComp";
 import Home from "./components/HomeComp";
+import Boilerplate from "./components/BoilerplateComp";
 import StyleHome from "./components/StylesHomeComp";
 import ControlsHome from "./components/ControlsHomeComp";
 
@@ -47,6 +48,7 @@ import Searchbox from "./components/controls/SearchboxComp";
 import Select from "./components/controls/SelectComp";
 import AdvSelect from "./components/controls/AdvancedSelectComp";
 
+
 class App extends Component{
   
   render(){
@@ -55,6 +57,7 @@ class App extends Component{
           <Topnav />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path ="/boilerplate" component={Boilerplate} />
             <Route path="/getstarted" component={Home} />
             <Route path="/styles" component={StyleHome} />
             <Route path="/controls" component={ControlsHome} />

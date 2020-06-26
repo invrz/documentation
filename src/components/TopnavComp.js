@@ -18,18 +18,21 @@ class Topnav extends Component{
   render(){
     return(
       <div>
-        <div className="large12 pivot_container primary_blue top">
-            <button className="title primary_blue">Fluent Design</button>
+        <div className="large12 pivot_container primary_blue top"><br />
+            <NavLink to="/https://fluentdesignforweb.github.io/" className="title pivot_button">Fluent Design</NavLink>
             <NavLink to="/getstarted" className="pivot_button small0">Get Started</NavLink>
+            <NavLink to="/boilerplate" className="pivot_button small0">Boilerplate</NavLink>
             <NavLink to="/styles" className="pivot_button small0">Styles</NavLink>
             <NavLink to="/controls" className="pivot_button small0">Controls</NavLink>
-            <button className="primary_blue right large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button>
+            <button className="primary_blue right large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button><br /><br />
         </div>
 
         <div className="sidepanel_container" id="side">
           <div className="sidepanel_content right">
             <button className="primary_red right icon" onClick={HideNav}>X</button>
             <br /><br /><br /><br />
+            <NavLink to="/getstarted" onClick={HideNav}><div className="panel_item">Get Started</div></NavLink>
+            <NavLink to="/boilerplate" onClick={HideNav}><div className="panel_item">Boilerplate</div></NavLink>
             <NavLink to="/styles" onClick={HideNav}><div className="panel_item">Styles</div></NavLink>
             <NavLink to="/controls" onClick={HideNav}><div className="panel_item">Controls</div></NavLink>
             <NavLink to="/iconpack" onClick={HideNav}><div className="panel_item">Icons</div></NavLink>
