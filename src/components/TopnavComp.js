@@ -19,7 +19,7 @@ class Topnav extends Component{
     return(
       <div>
         <div className="large12 pivot_container primary_blue top"><br />
-            <NavLink to="/https://fluentdesignforweb.github.io/" className="title pivot_button">Fluent Design</NavLink>
+            <a href="https://fluentdesignforweb.github.io/" className="title pivot_button">Fluent Design</a>
             <NavLink to="/getstarted" className="pivot_button small0">Get Started</NavLink>
             <NavLink to="/boilerplate" className="pivot_button small0">Boilerplate</NavLink>
             <NavLink to="/styles" className="pivot_button small0">Styles</NavLink>
