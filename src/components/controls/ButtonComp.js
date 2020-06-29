@@ -3,6 +3,7 @@ import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
+import { NavLink } from "react-router-dom";
 
 function frosting(){
 
@@ -118,7 +119,7 @@ class Button extends Component{
             <div className="page_container primary_white zi2">
                 <p className="title bold">Pivot Button</p>
                 <div className="page_container outline">
-                  <a href="#" className="pivot_button">Primary White</a>
+                  <NavLink to="#" className="pivot_button">Primary White</NavLink>
                 </div>
                 <p>
                   The language-markup to get the Themed Buttons are
