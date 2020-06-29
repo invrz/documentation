@@ -36,6 +36,7 @@ class Topnav extends Component{
             <NavLink to="/styles"><div className="panel_item" onClick={HideNav}>Styles</div></NavLink>
             <NavLink to="/controls"><div className="panel_item" onClick={HideNav}>Controls</div></NavLink>
             <NavLink to="/iconpack"><div className="panel_item" onClick={HideNav}>Icons</div></NavLink>
+            <span style={{position: "absolute", bottom: "5%", color: "#1e1e1e"}}>&copy; The Code Drop 2020</span>
           </div>
         </div>
       </div>
