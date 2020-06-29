@@ -29,8 +29,13 @@ jobs:
       run: npm run build
     - name: Testing Build
       run: npm test
-    - name: now-deploy-preview-comment
-      uses: iam4x/now-deploy-preview-comment@v1.0.1
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
+          CLEAN: false
 #      with:
 #       deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 #        publish_dir: ./build
