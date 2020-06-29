@@ -27,7 +27,7 @@ class GettingStarted extends Component{
             <br /><br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Add Fluent Design in your Project</p>
-                <p>
+                <div>
                     Fluent Design for Web is easy to use, and even easier to include it in your project and use it. To use Fluent Design for Web in your project 
                     you just need to include this piece of code in HEAD tag of the HTML files.<br /><br />
                     <div className="code_content enabled">
@@ -48,12 +48,12 @@ class GettingStarted extends Component{
     &lt;link href="https://fluentdesignforweb.github.io/fluent.js" rel="stylesheet" type="text/css" /&gt;
                         </pre>
                     </div>
-                </p>
+                </div>
             </div>
             <br /><br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Use Fluent Design Classes in your project</p>
-                <p>
+                <div>
                     Best part about including Fluent Design for Web in your project is, it styles most of the common elements like Headings, Paragraphs, Links, etc on its own 
                     you just need to add their HTML for example just adding and h3 tag styles it.
                     <br /><br />
@@ -65,23 +65,23 @@ class GettingStarted extends Component{
                     </div>
                     <br /><br />
                     And if you want to add some complex styles, its still easy, you just need to include the required classes, for example if you want to make the heading bold 
-                    just add class="bold" to h1 tag
+                    just add className="bold" to h1 tag
                     <br /><br />
                     <div className="code_content enabled">
                         <pre className="codeblock_text">
-    &lt;h3 class="bold"&gt;Adding class="bold" makes heading bold&lt;/h3&gt;
+    &lt;h3 className="bold"&gt;Adding className="bold" makes heading bold&lt;/h3&gt;
                         </pre>
-                        <h3 class="bold">Adding class="bold" makes heading bold</h3>
+                        <h3 className="bold">Adding className="bold" makes heading bold</h3>
                     </div>
-                </p><br />
+                </div><br />
                 <p className="title bold">Extending on Usage</p>
-                <p>
+                <div>
                     You can go through the following links to know more about the classes which Fluent Design for Web has and how to use them in your website.<br /><br />
                     <NavLink to="/boilerplate">Boilerplate</NavLink><br />
                     <NavLink to="/styles">Styles</NavLink><br />
                     <NavLink to="/controls">Controls</NavLink><br />
                     <NavLink to="/iconpack">Icons</NavLink><br />
-                </p>
+                </div>
 
             </div>
         </main>
