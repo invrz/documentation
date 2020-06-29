@@ -49,6 +49,7 @@
 .top{
   position: relative;
   z-index: 12;
+  padding-bottom: 6px; height: 64px; padding-top: 12px;
 }
 .tile{
   font-size: 26px;
