@@ -10,7 +10,7 @@ class TextAlign extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Alignment</h6>
@@ -20,7 +20,7 @@ class TextAlign extends Component{
                 <p>
                   Aligning text using Fluent Design for Web is as easy as it gets, just calling text align classes can align the text.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <p className="ta_left">
                     Text can be left aligned by adding class="ta_left" to any text.<br /><br />
                   </p>
@@ -37,7 +37,7 @@ class TextAlign extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;p class="ta_left"&gt;Text can be left aligned by adding class="ta_left" to any text.&lt;/p&gt; <br />
                           &lt;p class="ta_right"&gt;Text can be right aligned by adding class="ta_right" to any text.&lt;/p&gt; <br />

@@ -11,7 +11,7 @@ class Overlay extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Overlay</h6>
@@ -30,7 +30,7 @@ class Overlay extends Component{
                 <p>
                   With current Support with Fluent Design for Web, you can make overlays over any UI Component without adding any additional JavaScript.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div class="overlay_container center">
                     <img src={Example} class="overlay_content" alt="Overlay Example" />
                     <div class="overlay">
@@ -41,7 +41,7 @@ class Overlay extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                         &lt;div class="overlay_container center"&gt;  <br />
                         &nbsp;&nbsp;&lt;img src="path_to_your_image" class="overlay_content" alt="Overlay Example Image" /&gt;<br />

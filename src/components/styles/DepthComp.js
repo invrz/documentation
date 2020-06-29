@@ -10,7 +10,7 @@ class Depth extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Depth</h6>
@@ -22,7 +22,7 @@ class Depth extends Component{
                   with Fluent Design for Web, you need to call one additional class to make any element have a raised effect, and 
                   using it is simple too, just add a d_level class to your elements.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="tab primary_white dlevel0">
                     Depth Level 0 <br />
                   </button>
@@ -42,7 +42,7 @@ class Depth extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;button class="primary_white dlevel0"&gt;Depth Level 0&lt;/button&gt; <br />
                           &lt;button class="primary_white dlevel1"&gt;Depth Level 1&lt;/button&gt; <br />

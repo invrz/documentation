@@ -11,7 +11,7 @@ class Tooltip extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Tooltip</h6>
@@ -30,7 +30,7 @@ class Tooltip extends Component{
                 <p>
                   Tooltips can be implemented in Fluent Design for Web very easily. To do so, just do the following.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div class="tooltip_container">
                     <span class="tooltip_info">When you hover over the button, you see me</span>
                     <button class="small primary_white dlevel2">Hover/Touch For Tooltip</button>
@@ -39,7 +39,7 @@ class Tooltip extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;div class="tooltip_container"&gt;  <br />
                         &nbsp;&nbsp;&lt;span class="tooltip_info"&gt;When you hover over the button, you see me&lt;/span&gt;  <br />

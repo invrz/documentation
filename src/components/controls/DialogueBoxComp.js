@@ -18,7 +18,7 @@ class DialogueBox extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Dialogue Box</h6>
@@ -38,13 +38,13 @@ class DialogueBox extends Component{
                 <p>
                   With current Support with Fluent Design for Web, you can make upto 5 Dialogue Boxes without adding any additional JavaScript.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button onClick={ShowDBox} className="primary_white dlevel1">Click to Open Dialogue Box</button>
                 </div>
                 <p>
                   The language-markup to get the Button part of the output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;button class="primary_white dlevel1" onclick="opendialog1();"&gt;Click to Open Dialogue   Box&lt;/button&gt;<br />
                         </pre>
@@ -52,7 +52,7 @@ class DialogueBox extends Component{
                 <p>
                   The language-markup to get the Dialogue Box part of the output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
 &lt;div class="dialogue_box" id="dialog1"&gt; <br />
 &nbsp;&nbsp;&lt;div class="dialogue_pane large12"&gt; <br />

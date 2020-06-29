@@ -10,7 +10,7 @@ class ProgressBar extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Progress Bars</h6>
@@ -32,13 +32,13 @@ class ProgressBar extends Component{
                   Adding a Simple Progress Bar is very easy in Fluent Design for Web. It can be used when progress has to be shown in percentage and 
                   progress can be quantified.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="simple_progress_bar"></div>
                 </div>
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="simple_progress_bar"&gt;&lt;/div&gt; 
                         </pre>
@@ -51,13 +51,13 @@ class ProgressBar extends Component{
                 <p>
                   Adding a Indeterminate Progress Bar is very easy in Fluent Design for Web. It can be used when progress can not be quantified. 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="indeterminate_progress_bar"></div>
                 </div>
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="indeterminate_progress_bar"&gt;&lt;/div&gt; 
                         </pre>

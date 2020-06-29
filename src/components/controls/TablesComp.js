@@ -10,7 +10,7 @@ class Tables extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Tables</h6>
@@ -28,7 +28,7 @@ class Tables extends Component{
                   Tables are made of two parts <b>thead</b>(table head) and <b>tbody</b>(table body). Thead can be used 
                   to differentiate how the heading of table is styled than rest of the table.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <thead>
                     <tr>
                       <th className="primary_blue">Heading 1</th>
@@ -41,7 +41,7 @@ class Tables extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;thead&gt;  <br />
                         &nbsp;&nbsp;&lt;tr&gt;  <br />
@@ -57,7 +57,7 @@ class Tables extends Component{
                 <p>
                   Similarly, a table body will look like this
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <tbody className="box">
                   <tr>
                       <td>Cell 1, 1</td>
@@ -82,7 +82,7 @@ class Tables extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;tbody&gt;  <br />
                         &nbsp;&nbsp;&lt;tr&gt;  <br />
@@ -114,7 +114,7 @@ class Tables extends Component{
                   When you combine both table head and table body you get something like this. Also, wrap the &lt;table&gt; 
                   inside a <b>&lt;div class="table_container"&gt;</b> to make the table responsive.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="table_container">
                       <table className="dlevel2">
                         <thead>
@@ -151,7 +151,7 @@ class Tables extends Component{
                 <p>
                   The language-markup to get responsive table like above is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;div class="table_container"&gt;  <br />
                         &nbsp;&nbsp;&lt;table class="dlevel2"&gt;  <br />

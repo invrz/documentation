@@ -10,7 +10,7 @@ class TextArea extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Textarea Input</h6>
@@ -29,13 +29,13 @@ class TextArea extends Component{
                   When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
                   input of type textarea gives a prestyled Textarea Input field.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <textarea placeholder="This is a Text Area"></textarea>
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;textarea placeholder="This is a Text Area"&gt;&lt;/textarea&gt;
                       </pre>
@@ -47,13 +47,13 @@ class TextArea extends Component{
                 <p>
                   To make a Textarea Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <textarea placeholder="This is a Text Area" className="btm_brdr"></textarea>
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;textarea placeholder="This is a Text Area" class="btm_brdr"&gt;&lt;/textarea&gt;
                       </pre>
@@ -65,13 +65,13 @@ class TextArea extends Component{
                 <p>
                   To make a Textarea Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <textarea placeholder="This is a Text Area" className="transparent btm_brdr"></textarea>
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;textarea placeholder="This is a Text Area" class="transparent"&gt;&lt;/textarea&gt;
                       </pre>

@@ -18,7 +18,7 @@ class Window extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Window</h6>
@@ -38,13 +38,13 @@ class Window extends Component{
                 <p>
                   With current Support with Fluent Design for Web, you can make upto 5 Windows without adding any additional JavaScript.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button onClick={ShowWindow} className="primary_white dlevel1">Click to Show Window</button>
                 </div>
                 <p>
                   The language-markup to get the Button part of the output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;button class="primary_white dlevel1" onclick="openmod1();"&gt;Open Window&lt;/button&gt;<br />
                         </pre>
@@ -52,7 +52,7 @@ class Window extends Component{
                 <p>
                   The language-markup to get the Window part of the output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="modal_container" id="mod1"&gt;  <br />
                           &nbsp;&nbsp;&lt;div class="modal_content zi3"&gt;  <br />

@@ -10,7 +10,7 @@ class DateTimeInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Date Time Input</h6>
@@ -30,13 +30,13 @@ class DateTimeInput extends Component{
                   input of type datetime-local gives a prestyled Date Time Input field. Not only that, an date-time picker appears 
                   automatically, if Date Time Input is called on the right side of Input.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="datetime-local" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="datetime-local" /&gt;
                       </pre>
@@ -48,13 +48,13 @@ class DateTimeInput extends Component{
                 <p>
                   To make a Date Time Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="datetime-local" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="datetime-local" class="btm_brdr" /&gt;
                       </pre>
@@ -66,13 +66,13 @@ class DateTimeInput extends Component{
                 <p>
                   To make a Date Time Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="datetime-local" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="datetime-local" class="btm_brdr transparent" /&gt;
                       </pre>

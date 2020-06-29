@@ -10,7 +10,7 @@ class UList extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>List</h6>
@@ -28,7 +28,7 @@ class UList extends Component{
                 <p>
                   To make an unordered List, just add an "ul" tag and "li" tag to add items.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <ul>
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -40,7 +40,7 @@ class UList extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;ul&gt;  <br />
                         &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;  <br />

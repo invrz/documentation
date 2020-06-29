@@ -10,7 +10,7 @@ class Boilerplate extends Component{
     return(
       <div>
         <Sidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>HTML Boilerplate</h6>
@@ -23,7 +23,7 @@ class Boilerplate extends Component{
                   fluent.min.css as it takes less space and loads faster, hence improving the performance. Also, a placeholder for both nav 
                   and main have been provided. Just copy this Boilerplate and get started.
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
 
 &lt;!doctype html&gt;  <br />
@@ -52,10 +52,11 @@ class Boilerplate extends Component{
 
 &nbsp;&nbsp;&lt;body&gt;  <br />
 
-&nbsp;&nbsp;&nbsp;&nbsp;  &lt;nav&gt;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  &lt;nav class="column large3 medium4 small0"&gt;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;This is the Side Navigation Template&lt;/h5&gt;  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  &lt;/nav&gt;  <br /><br />
 
-&nbsp;&nbsp;&nbsp;&nbsp;  &lt;main&gt;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  &lt;main class="column offset-large3 offset-medium4 large9 medium8 small12 page_container"&gt;  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;h3&gt;Hi! This is Simple Boilerplate for Fluent Design for Web.&lt;/h3&gt;  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  &lt;/main&gt;  <br /><br />
 

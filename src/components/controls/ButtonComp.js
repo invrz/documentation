@@ -22,7 +22,7 @@ class Button extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Buttons</h6>
@@ -41,13 +41,13 @@ class Button extends Component{
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Default Button</p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="dlevel2">Standard Button</button>
                 </div>
                 <p>
                   The language-markup to get the Default Button is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;button class="dlevel2"&gt;Standard Button&lt;/button&gt;<br />
                         </pre>
@@ -57,7 +57,7 @@ class Button extends Component{
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Themed Button</p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="primary_white dlevel2">Primary White</button>&nbsp;&nbsp;&nbsp;&nbsp;
                   <button className="primary_blue dlevel2">Primary Blue</button>&nbsp;&nbsp;&nbsp;&nbsp;
                   <button className="primary_green dlevel2">Primary Green</button>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,7 +67,7 @@ class Button extends Component{
                 <p>
                   The language-markup to get the Themed Buttons are
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;button class="primary_white dlevel2"&gt;Primary White&lt;/button&gt; <br />
     &lt;button class="primary_blue dlevel2"&gt;Primary Blue&lt;/button&gt; <br />
@@ -81,7 +81,7 @@ class Button extends Component{
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Frost Button</p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="frost_container" onMouseOver={frosting}>
                     <span className="frost">Frost Button</span>
                   </button>
@@ -89,7 +89,7 @@ class Button extends Component{
                 <p>
                   The language-markup to get the Default Button is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                   <pre className="codeblock_text">
                         &lt;button class="frost_container" onmouseover="frosting()"&gt;  <br />
                         &nbsp;&nbsp;&lt;span class="frost"&gt;Frost Button&lt;/span&gt;  <br />
@@ -99,7 +99,7 @@ class Button extends Component{
                 <p>
                   You can always combine themed colors with frost buttons to get frosted themed button like this one.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="frost_container primary_blue" onMouseOver={frosting}>
                     <span className="frost">Themed Frost Button</span>
                   </button>
@@ -107,7 +107,7 @@ class Button extends Component{
                 <p>
                   The language-markup to get the Default Button is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                         &lt;button class="frost_container primary_blue" onmouseover="frosting()"&gt;  <br />
                         &nbsp;&nbsp;&lt;span class="frost"&gt;Themed Frost Button&lt;/span&gt;  <br />
@@ -118,13 +118,13 @@ class Button extends Component{
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Pivot Button</p>
-                <div className="page_container outline">
+                <div className="outline">
                   <NavLink to="#" className="pivot_button">Primary White</NavLink>
                 </div>
                 <p>
                   The language-markup to get the Themed Buttons are
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;a class="pivot_button"&gt;Primary White&lt;/a&gt; <br />
                         </pre>
@@ -139,7 +139,7 @@ class Button extends Component{
                   With Fluent Design for web, you get three predefined sizes for buttons, with frost buttons, 
                   and you can always expand on that by using your own custom css
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="primary_white small">Small</button>
                   <button className="primary_white regular">Regular</button>
                   <button className="primary_white large frost_container" onMouseOver={frosting}>
@@ -149,7 +149,7 @@ class Button extends Component{
                 <p>
                   The language-markup to get the Themed Buttons are
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
     &lt;button class="primary_white small"&gt;Small&lt;/button&gt; <br />
     &lt;button class="primary_white regular"&gt;Regular&lt;/button&gt; <br />
