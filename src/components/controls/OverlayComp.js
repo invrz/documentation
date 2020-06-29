@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import Example from './overlay_example.png';
 import ControlsSidenav from "../ControlsSidenavComp";

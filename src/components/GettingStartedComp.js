@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import '../fluent.css';
 import { NavLink } from "react-router-dom";
 
 class GettingStarted extends Component{

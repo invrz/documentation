@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
-import './fluent.css';
+import "fdweb/fluent.css";
 import './App.css';
 
 import Topnav from "./components/TopnavComp";

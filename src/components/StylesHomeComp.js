@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 
 import StylesSidenav from "./StylesSidenavComp";
 import Styles from "./StyleComp";

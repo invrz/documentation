@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import StylesSidenav from "../StylesSidenavComp";
 import Footer from "../FooterComp";
 import { NavLink } from "react-router-dom";

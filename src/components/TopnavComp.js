@@ -1,6 +1,5 @@
 import React, {Component} from "react"
-import '../fluent.css';
-import '../icons.css';
+import 'fdweb/fluent-icons.css';
 import '../App.css';
 import { NavLink } from "react-router-dom";
 

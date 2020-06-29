@@ -54,7 +54,7 @@ a,p,pre{font-size: 18px; font-weight: 400;}
     display: block;
     width: 92%;
     margin: auto;
-    padding: 10px 30px;
+    padding: 10px;
 }
 .outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 90%;}
 footer{position: relative; width: 100%;}
