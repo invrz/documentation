@@ -46,3 +46,7 @@ span.label{
 .btm_col{
     vertical-align: bottom;
 }
+.type{
+    color: #DE1738;
+    content: "New Content";
+}

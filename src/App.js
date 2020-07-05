@@ -9,6 +9,7 @@ import Boilerplate from "./components/BoilerplateComp";
 import StyleHome from "./components/StylesHomeComp";
 import ControlsHome from "./components/ControlsHomeComp";
 
+
 import Typography from "./components/styles/TypographyComp";
 import Colors from "./components/styles/ColorsComp";
 import Depth from "./components/styles/DepthComp";
@@ -47,6 +48,7 @@ import Checkbox from "./components/controls/CheckboxComp";
 import Searchbox from "./components/controls/SearchboxComp";
 import Select from "./components/controls/SelectComp";
 import AdvSelect from "./components/controls/AdvancedSelectComp";
+import FourZeroFour from "./components/404Comp";
 
 
 class App extends Component{
@@ -101,6 +103,7 @@ class App extends Component{
             <Route path="/select" component={Select} />
             <Route path="/adv_select" component={AdvSelect} />
             
+            <Route component={FourZeroFour} />
 
           </Switch>
         </Router>
