@@ -48,5 +48,15 @@ span.label{
 }
 .type{
     color: #DE1738;
-    content: "New Content";
+}
+.pivot_title{
+    font-size: 24px;
+    color: #fcfcfc;
+    padding: 5px;
+}
+.pivot_title:hover::before{
+    display: none;
+}
+.pivot_menu{
+    height: 40px;
 }

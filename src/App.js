@@ -49,6 +49,7 @@ import Searchbox from "./components/controls/SearchboxComp";
 import Select from "./components/controls/SelectComp";
 import AdvSelect from "./components/controls/AdvancedSelectComp";
 import FourZeroFour from "./components/404Comp";
+import PivotMenu from "./components/controls/PivotMenuComp";
 
 
 class App extends Component{
@@ -102,6 +103,7 @@ class App extends Component{
             <Route path="/searchbox" component={Searchbox} />
             <Route path="/select" component={Select} />
             <Route path="/adv_select" component={AdvSelect} />
+            <Route path="/pivot_menu" component={PivotMenu} />
             
             <Route component={FourZeroFour} />
 
