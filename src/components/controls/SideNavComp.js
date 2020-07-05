@@ -1,10 +1,17 @@
 import React, {Component} from "react"
 import '../extra.css';
-import Example from './overlay_example.png';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class Overlay extends Component{
+
+function ShowPanel(){
+  document.getElementById("side1").style.display=("block");
+}
+function HidePanel(){
+  document.getElementById("side1").style.display=("none");
+}
+
+class SideNav extends Component{
   
   render(){
     return(
@@ -13,56 +20,63 @@ class Overlay extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
-            <h6>Overlay</h6>
+            <h6>Side Navigation</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Overlays are used to render a semi-transparent layer on top of existing UI. Overlays help focus the user on the content that 
-                  sits above the added layer and are often used to help designate a modal or blocking experience. Overlays can be seen used in 
-                  conjunction with Panels and Dialogs.                
+                  SideNavs (also called "left nav" or "navigation pane") provide links to the main areas of an app or a site. 
+                  In larger configurations, the Nav is always on-screen, usually on the left of the view. In smaller configurations, 
+                  the Nav may collapse into a skinnier version or be completely hidden until the user taps an icon. Also, SideNavs are 
+                  only visible on Medium and Large Screen Sizes and not on Small ones.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  With current Support with Fluent Design for Web, you can make overlays over any UI Component without adding any additional JavaScript.
+                  With current Support with Fluent Design for Web, SideNavs come fixed on the left side and look like what you can see 
+                  on the left side of the screen if you are using a Medium or Large Screen Size.
                 </p>
-                <div className="outline">
-                  <div class="overlay_container center">
-                    <img src={Example} class="overlay_content" alt="Overlay Example" />
-                    <div class="overlay">
-                        <br /><h6 className="ta_center">This Is Some Example Overlay Info</h6>
-                    </div>
-                  </div>
-                </div>
                 <p>
-                  The language-markup to get the above output
+                  The language-markup to get a similiar SideNav as on left side of this page is
                 </p>
                 <div className="code_content enabled">
-                        <pre className="codeblock_text">
-                        &lt;div class="overlay_container center"&gt;  <br />
-                        &nbsp;&nbsp;&lt;img src="path_to_your_image" class="overlay_content" alt="Overlay Example Image" /&gt;<br />
-                        &nbsp;&nbsp;&lt;div class="overlay"&gt;<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;&lt;h6 className="ta_center"&gt;This Is Some Example Overlay Info&lt;/h6&gt;<br />
-                        &nbsp;&nbsp;&lt;/div&gt;<br />
-                        &lt;/div&gt;<br />
-                        </pre>
+                  <pre className="codeblock_text">
+                    &nbsp;&nbsp;  &lt;nav class="column large3 medium4 small0"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 class="bold"&gt;Title&lt;/h6&gt;  <br />
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="nav"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" className="nav_btn" /&gt;&lt;div className="nav_title"&gt;Styles&lt;/div&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="nav_group"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/12colgrid"&gt;12 Col Grid&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/9colgrid"&gt;9 Col Grid&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/colors"&gt;Colors&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/depth"&gt;Depth&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/objalign"&gt;Elements Alignment&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/iconpack"&gt;Icon Pack&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/textalign"&gt;Text Alignment&lt;/a&gt;&lt;br /&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="/typography"&gt;Typography&lt;/a&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
+
+                    &nbsp;&nbsp;  &lt;/nav&gt;
+                  </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Extending on Usage</p>
                 <p>
-                  Usage of Overlays is not only limited to Images, but they can be used with any UI Component as long as you want to display some 
-                  information when user touches the Component or hovers their mouse over it. Since Overlays don't use JavaScript, any number of 
-                  Overlays can be added in a single page.
+                  Use Nav for apps with many top-level navigation items that are of similar type. For example, 
+                  a sports app with categories like Football, Baseball, Basketball, Soccer, and so on.
+                  Keep the names of the navigation items brief and clear, rather than trying to be overly specific.
+                  Use Nav for an app with a medium to high number of top-level views or categories. If your app is very simple, you may prefer a simpler hub-and-spoke layout.
                 </p>
             </div><br /><br />
-
         </main>
         <Footer />
+
       </div>
     );
   }
@@ -70,4 +84,4 @@ class Overlay extends Component{
 }
 
 
-export default Overlay;
+export default SideNav;

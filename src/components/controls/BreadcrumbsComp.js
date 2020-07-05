@@ -1,10 +1,9 @@
 import React, {Component} from "react"
 import '../extra.css';
-import Example from './overlay_example.png';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class Overlay extends Component{
+class Breadcrumbs extends Component{
   
   render(){
     return(
@@ -13,51 +12,51 @@ class Overlay extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
-            <h6>Overlay</h6>
+            <h6>Breadcrumbs</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  Overlays are used to render a semi-transparent layer on top of existing UI. Overlays help focus the user on the content that 
-                  sits above the added layer and are often used to help designate a modal or blocking experience. Overlays can be seen used in 
-                  conjunction with Panels and Dialogs.                
+                  Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page’s 
+                  location within a hierarchy and help the user understand where they are in relation to the rest of that 
+                  hierarchy. They also afford one-click access to higher levels of that hierarchy. <br />
+                  Breadcrumbs are typically placed, in horizontal form, under the masthead or navigation of an experience, above the primary content area.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  With current Support with Fluent Design for Web, you can make overlays over any UI Component without adding any additional JavaScript.
+                  With current Support with Fluent Design for Web, making Breadcrumbs is easy.
                 </p>
                 <div className="outline">
-                  <div class="overlay_container center">
-                    <img src={Example} class="overlay_content" alt="Overlay Example" />
-                    <div class="overlay">
-                        <br /><h6 className="ta_center">This Is Some Example Overlay Info</h6>
-                    </div>
-                  </div>
+                  <ul className="breadcrumb_container">
+                    <li className="breadcrumb"><a href="https://fluentdesignforweb.github.io/">Home</a></li>
+                    <li className="breadcrumb"><a href="https://fluentdesignforweb.github.io/documentation/">&gt; Documentation</a></li>
+                    <li className="breadcrumb"><a href="https://fluentdesignforweb.github.io/documentation#/controls">&gt; Controls</a></li>
+                    <li className="breadcrumb"><a className="bold" href="https://fluentdesignforweb.github.io/documentation#/breadcrumbs">&gt; Breadcrumbs</a></li>
+                  </ul>
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
                 <div className="code_content enabled">
-                        <pre className="codeblock_text">
-                        &lt;div class="overlay_container center"&gt;  <br />
-                        &nbsp;&nbsp;&lt;img src="path_to_your_image" class="overlay_content" alt="Overlay Example Image" /&gt;<br />
-                        &nbsp;&nbsp;&lt;div class="overlay"&gt;<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;&lt;h6 className="ta_center"&gt;This Is Some Example Overlay Info&lt;/h6&gt;<br />
-                        &nbsp;&nbsp;&lt;/div&gt;<br />
-                        &lt;/div&gt;<br />
-                        </pre>
+                  <pre className="codeblock_text">
+                    &nbsp;&nbsp;&lt;ul class="breadcrumb_container"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb"&gt;&lt;a href="https://fluentdesignforweb.github.io/"&gt;Home&lt;/a&gt;&lt;/li&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb"&gt;&lt;a href="https://fluentdesignforweb.github.io/documentation/"&gt;&gt; Documentation&lt;/a&gt;&lt;/li&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb"&gt;&lt;a href="https://fluentdesignforweb.github.io/documentation#/controls"&gt;&gt; Controls&lt;/a&gt;&lt;/li&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb"&gt;&lt;a class="bold" href="https://fluentdesignforweb.github.io/documentation#/breadcrumbs"&gt;&gt; Breadcrumbs&lt;/a&gt;&lt;/li&gt;  <br />
+                    &nbsp;&nbsp;&lt;/ul&gt;
+                  </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Extending on Usage</p>
                 <p>
-                  Usage of Overlays is not only limited to Images, but they can be used with any UI Component as long as you want to display some 
-                  information when user touches the Component or hovers their mouse over it. Since Overlays don't use JavaScript, any number of 
-                  Overlays can be added in a single page.
+                  Place Breadcrumbs at the top of a page, above a list of items, or above the main content of a page for best results. 
+                  Making the last breadcrumb bold is optional, it just helps to denote that this is active page.
                 </p>
             </div><br /><br />
 
@@ -70,4 +69,4 @@ class Overlay extends Component{
 }
 
 
-export default Overlay;
+export default Breadcrumbs;

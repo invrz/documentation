@@ -60,7 +60,7 @@ span.label{
 .pivot_menu{
     height: 40px;
 }
-.commandbar_container{
+.commandbar_container, .breadcrumb_container{
     background: #fff;
 }
 .dropdown_container{
@@ -75,3 +75,4 @@ span.label{
 .commandbar_button{
     font-size: 16px;
 }
+.last{font-weight: 800;}

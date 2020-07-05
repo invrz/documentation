@@ -43,12 +43,12 @@ class PivotMenu extends Component{
                 </p>
                 <div className="code_content enabled">
                       <pre className="codeblock_text">
-                        &nbsp;&nbsp;&lt;div className="pivot_menu large12 medium12 small12 primary_red"&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_title"&gt;Menu Title&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 1&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button active" href="#"&gt;Link 2&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 3&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 4&lt;/a&gt;  <br />
+                        &nbsp;&nbsp;&lt;div class="pivot_menu large12 medium12 small12 primary_red"&gt;  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="pivot_title"&gt;Menu Title&lt;/a&gt;  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="pivot_button" href="#"&gt;Link 1&lt;/a&gt;  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="pivot_button active" href="#"&gt;Link 2&lt;/a&gt;  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="pivot_button" href="#"&gt;Link 3&lt;/a&gt;  <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="pivot_button" href="#"&gt;Link 4&lt;/a&gt;  <br />
                         &nbsp;&nbsp;&lt;/div&gt;  <br />
                       </pre>
                 </div>

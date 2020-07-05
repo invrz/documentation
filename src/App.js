@@ -48,10 +48,12 @@ import Checkbox from "./components/controls/CheckboxComp";
 import Searchbox from "./components/controls/SearchboxComp";
 import Select from "./components/controls/SelectComp";
 import AdvSelect from "./components/controls/AdvancedSelectComp";
-import FourZeroFour from "./components/404Comp";
 import PivotMenu from "./components/controls/PivotMenuComp";
 import CommandBar from "./components/controls/CommandBarComp";
 
+import FourZeroFour from "./components/404Comp";
+import Breadcrumbs from "./components/controls/BreadcrumbsComp";
+import SideNav from "./components/controls/SideNavComp";
 
 class App extends Component{
   
@@ -106,7 +108,9 @@ class App extends Component{
             <Route path="/adv_select" component={AdvSelect} />
             <Route path="/pivot_menu" component={PivotMenu} />
             <Route path="/command_bar" component={CommandBar} />
-            
+            <Route path="/breadcrumbs" component={Breadcrumbs} />
+            <Route path="/sidenav" component={SideNav} />
+
             <Route component={FourZeroFour} />
 
           </Switch>
