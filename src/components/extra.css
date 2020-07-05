@@ -60,3 +60,16 @@ span.label{
 .pivot_menu{
     height: 40px;
 }
+.commandbar_container{
+    background: #fff;
+}
+.dropdown_container{
+    display: inline;
+}
+.dropdown_container .commandbar_button{
+    width: auto;
+    border: none;
+}
+.commandbar_button{
+    font-size: 16px;
+}

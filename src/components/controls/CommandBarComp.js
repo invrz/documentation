@@ -3,7 +3,7 @@ import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
 
-class PivotMenu extends Component{
+class CommandBar extends Component{
   
   render(){
     return(
@@ -12,55 +12,68 @@ class PivotMenu extends Component{
         <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
-            <h6>Pivot Menu</h6>
+            <h6>Command Bar</h6>
             <br />
             <div className="page_container primary_white zi2">
                 <p className="title bold">Overview</p>
                 <p>
-                  The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. 
-                  Pivots allow for navigation between two or more content views and relies on text headers to articulate the different 
-                  sections of content.
+                  CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it 
+                  resides above. CommandBars are one of the most visible and recognizable ways to surface commands, and can be an 
+                  intuitive method for interacting with content on the page; however, if overloaded or poorly organized, they can be 
+                  difficult to use and hide valuable commands from your user. CommandBars can also display a search box for finding 
+                  content, hold simple commands as well as menus, or display the status of ongoing actions.
                 </p>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Usage</p>
                 <p>
-                  With current Support with Fluent Design for Web, making Pivot Menu(s) is easy as it gets. If you want to denote the active tab 
-                  an active class needs to be added.
+                  With current Support with Fluent Design for Web, making Command Bar is relatively easy. It can be used as an alternative to Pivot Menu
                 </p>
                 <div className="outline">
-                  <div className="pivot_menu large12 medium12 small12 primary_red">
-                    <a className="pivot_title">Menu Title</a>
-                    <a className="pivot_button" href="#">Link 1</a>
-                    <a className="pivot_button active" href="#">Link 2</a>
-                    <a className="pivot_button" href="#">Link 3</a>
-                    <a className="pivot_button" href="#">Link 4</a>
+                  <div class="commandbar_container">
+                    <div className="dropdown_container">
+                      <button class="dropdown_btn commandbar_button">Command_1</button>
+                      <ul className="dropdown_items dlevel2">  
+                        <a href="#">Item 1</a>  
+                        <a href="#">Item 2</a>  
+                        <a href="#">Item 3</a>  
+                      </ul> 
+                    </div>
+                    <button class="commandbar_button">Command_2</button>
+                    <button class="commandbar_button">Command_3</button>
+                    <button class="commandbar_button">Command_4</button>
                   </div>
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
                 <div className="code_content enabled">
-                      <pre className="codeblock_text">
-                        &nbsp;&nbsp;&lt;div className="pivot_menu large12 medium12 small12 primary_red"&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_title"&gt;Menu Title&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 1&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button active" href="#"&gt;Link 2&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 3&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a className="pivot_button" href="#"&gt;Link 4&lt;/a&gt;  <br />
-                        &nbsp;&nbsp;&lt;/div&gt;  <br />
-                      </pre>
+                  <pre className="codeblock_text">
+                    &nbsp;&nbsp;&lt;div class="commandbar_container"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="dropdown_container"&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="dropdown_btn commandbar_button"&gt;Command_1&lt;/button&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul className="dropdown_items dlevel2"&gt;    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 1&lt;/a&gt;    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 2&lt;/a&gt;    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Item 3&lt;/a&gt;    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;   <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="commandbar_button"&gt;Command_2&lt;/button&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="commandbar_button"&gt;Command_3&lt;/button&gt;  <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="commandbar_button"&gt;Command_4&lt;/button&gt;  <br />
+                    &nbsp;&nbsp;&lt;/div&gt;  <br />
+                  </pre>
                 </div>
             </div><br /><br />
 
             <div className="page_container primary_white zi2">
                 <p className="title bold">Extending on Usage</p>
                 <p>
-                  Use on content-heavy pages that require a significant amount of scrolling to access the various sections.
-                  Be concise on the navigation labels, ideally one or two words rather than a phrase. 
-                  Make sure all the children of the Pivot component are of type PivotItem.
-                </p>
+                  Sort commands in order of importance from left to right or right to left depending on the culture.
+                  Organize commands into logical groupings.
+                  And display no more than 5-7 commands.
+              </p>
             </div><br /><br />
 
         </main>
@@ -72,4 +85,4 @@ class PivotMenu extends Component{
 }
 
 
-export default PivotMenu;
+export default CommandBar;
