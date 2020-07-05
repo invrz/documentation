@@ -64,11 +64,13 @@ span.label{
     background: #fff;
 }
 .dropdown_container{
-    display: inline;
+    display: inline-block;
+    width: auto;
 }
 .dropdown_container .commandbar_button{
     width: auto;
     border: none;
+    padding: 10px;
 }
 .commandbar_button{
     font-size: 16px;
