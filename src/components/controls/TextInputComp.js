@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class TextInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Text Input</h6>
@@ -30,13 +29,13 @@ class TextInput extends Component{
                   When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
                   input of type text gives a prestyled Text Input field.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="text" placeholder="Enter text here" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="text" placeholder="Enter text here" /&gt;
                       </pre>
@@ -48,13 +47,13 @@ class TextInput extends Component{
                 <p>
                   To make a Text Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="text" placeholder="Enter text here" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="text" placeholder="Enter text here" class="btm_brdr" /&gt;
                       </pre>
@@ -66,13 +65,13 @@ class TextInput extends Component{
                 <p>
                   To make a Text Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="text" placeholder="Enter text here" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="text" placeholder="Enter text here" class="btm_brdr transparent" /&gt;
                       </pre>

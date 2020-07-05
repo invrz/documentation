@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class MonthInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Month Input</h6>
@@ -30,13 +29,13 @@ class MonthInput extends Component{
                   input of type Month gives a prestyled Month Input field. Not only that, an month picker appears automatically, 
                   if Month Input is called on the right side of Input.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="month" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="month" /&gt;
                       </pre>
@@ -48,13 +47,13 @@ class MonthInput extends Component{
                 <p>
                   To make a Month Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="month" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="month" class="btm_brdr" /&gt;
                       </pre>
@@ -66,13 +65,13 @@ class MonthInput extends Component{
                 <p>
                   To make a Month Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="month" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="month" class="btm_brdr transparent" /&gt;
                       </pre>

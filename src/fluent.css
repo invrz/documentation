@@ -7,6 +7,7 @@
     border-radius: 2px;
 }
 
+/*
 @media (prefers-color-scheme: dark){
     body{background: #1e1e1e; color: #fcfcfc;}
     a, .link, ul .dropdown_btn{
@@ -16,6 +17,7 @@
         background: #1e1e1eaa;
     }
 }
+*/
 
 .spacein{
     margin: 5px;
@@ -50,11 +52,11 @@ a,p,pre{font-size: 18px; font-weight: 400;}
 /*Grid*/
 .page_container,.nav_container{
     display: block;
-    width: 88%;
+    width: 92%;
     margin: auto;
-    padding: 10px 30px;
+    padding: 10px;
 }
-.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 84%;}
+.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 90%;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
@@ -258,12 +260,13 @@ nav *{text-decoration: none;}
 nav *:before{display: none;}
 
 nav .nav_content{
-    width: 90%;
+    text-align: left;
+    width: 100%;
     display: block;
     margin: auto;
 }
 
-.nav{width: 100%; z-index: 1; display: block; padding: 0px; margin-bottom: -6%;}
+.nav{width: 100%; z-index: 1; display: block; padding: 0px;}
 
 .subnav{border: none; margin-left: -4%;}
 .subnav:hover{border: none;}
@@ -278,7 +281,8 @@ nav .nav_content{
     display: block;
     font-size: 20px;
     margin-top: -13%;
-    line-height: 40px;
+    line-height: 1;
+    text-align: left;
 }
 
 .nav_btn{
@@ -1043,6 +1047,7 @@ img.square{
 
 
 
+/*
 @media (prefers-color-scheme: dark){
     .ms-icon{
         color: #fcfcfc;
@@ -1130,3 +1135,4 @@ img.square{
     li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
 
 }
+*/

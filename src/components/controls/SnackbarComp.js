@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Snackbar extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Snackbar</h6>
@@ -30,7 +29,7 @@ class Snackbar extends Component{
                   With current Support with Fluent Design for Web, you can make as many snackbars as you want in a page and 
                   they disappear after 5 seconds. Snackbars normally appear on bottom-left part of the screen.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="snackbar_container">
                     <button className="snackbar_button small primary_white dlevel2">Click to open Snackbar</button>
                     <span className="snackbar_content box">This is Some Snackbar Content</span>
@@ -43,7 +42,7 @@ class Snackbar extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;div className="snackbar_container"&gt;  <br />
                         &nbsp;&nbsp;&lt;button className="snackbar_button small primary_white dlevel2"&gt;Click to open Snackbar&lt;/button&gt;  <br />

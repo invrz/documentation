@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class TelInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Tel Input</h6>
@@ -29,13 +28,13 @@ class TelInput extends Component{
                   When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
                   input of type Tel gives a prestyled Tel Input field.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="tel" placeholder="Telephone Number" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="tel" placeholder="Telephone Number" /&gt;
                       </pre>
@@ -47,13 +46,13 @@ class TelInput extends Component{
                 <p>
                   To make a Tel Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="tel" placeholder="Telephone Number" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="tel" placeholder="Telephone Number" class="btm_brdr" /&gt;
                       </pre>
@@ -65,13 +64,13 @@ class TelInput extends Component{
                 <p>
                   To make a Tel Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="tel" placeholder="Telephone Number" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="tel" placeholder="Telephone Number" class="btm_brdr transparent" /&gt;
                       </pre>

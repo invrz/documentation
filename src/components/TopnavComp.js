@@ -1,6 +1,5 @@
 import React, {Component} from "react"
-import '../fluent.css';
-import '../icons.css';
+import 'fdweb/fluent-icons.css';
 import '../App.css';
 import { NavLink } from "react-router-dom";
 
@@ -19,20 +18,24 @@ class Topnav extends Component{
     return(
       <div>
         <div className="large12 pivot_container primary_blue top">
-            <button className="title primary_blue">Fluent Design</button>
+            <button className="primary_blue large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button>
+            <a href="https://fluentdesignforweb.github.io/" className="title pivot_button">Fluent Design</a>
             <NavLink to="/getstarted" className="pivot_button small0">Get Started</NavLink>
+            <NavLink to="/boilerplate" className="pivot_button small0">Boilerplate</NavLink>
             <NavLink to="/styles" className="pivot_button small0">Styles</NavLink>
             <NavLink to="/controls" className="pivot_button small0">Controls</NavLink>
-            <button className="primary_blue right large0 medium0" onClick={ShowNav}><i className="ms-Icon ms-Icon--GlobalNavButton icon-small"></i></button>
         </div>
 
         <div className="sidepanel_container" id="side">
-          <div className="sidepanel_content right">
-            <button className="primary_red right icon" onClick={HideNav}>X</button>
+          <div className="sidepanel_content left">
+            <button className="primary_red left icon" onClick={HideNav}>X</button>
             <br /><br /><br /><br />
-            <NavLink to="/styles" onClick={HideNav}><div className="panel_item">Styles</div></NavLink>
-            <NavLink to="/controls" onClick={HideNav}><div className="panel_item">Controls</div></NavLink>
-            <NavLink to="/iconpack" onClick={HideNav}><div className="panel_item">Icons</div></NavLink>
+            <NavLink to="/getstarted"><div className="panel_item" onClick={HideNav}>Get Started</div></NavLink>
+            <NavLink to="/boilerplate"><div className="panel_item" onClick={HideNav}>Boilerplate</div></NavLink>
+            <NavLink to="/styles"><div className="panel_item" onClick={HideNav}>Styles</div></NavLink>
+            <NavLink to="/controls"><div className="panel_item" onClick={HideNav}>Controls</div></NavLink>
+            <NavLink to="/iconpack"><div className="panel_item" onClick={HideNav}>Icons</div></NavLink>
+            <span style={{position: "absolute", bottom: "5%", color: "#1e1e1e"}}>&copy; The Code Drop 2020</span>
           </div>
         </div>
       </div>

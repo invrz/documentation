@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Select extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Select</h6>
@@ -27,7 +26,7 @@ class Select extends Component{
                 <p>
                   Implementing Select in Fluent Design for Web is easy and can be done just by using HTML provides with prestyled Select menu.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <select>
                     <option>Select an Option</option>
                     <option>Option 1</option>
@@ -40,7 +39,7 @@ class Select extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                       &lt;select&gt; <br />
                       &nbsp;&nbsp;&lt;option&gt;Select an Option&lt;/option&gt; <br />

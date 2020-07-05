@@ -27,8 +27,5 @@ jobs:
       run: npm install
     - name: Build page
       run: npm run build
-    - name: Deploy to gh-pages
-      run: gh-pages -d build
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./build
+    - name: Testing Build
+      run: npm test

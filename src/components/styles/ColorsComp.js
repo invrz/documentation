@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import StylesSidenav from "../StylesSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Colors extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Colors</h6>
@@ -21,7 +20,7 @@ class Colors extends Component{
                   With fluent design for web, you get a set of Primary Colors and their Equivalent Secondary(Accent) Colors predefined for usage. 
                   Along with that, additional colors can always be added using custom styles.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="tab primary_blue zi1">
                     Primary Blue <br />
                     #0065AF
@@ -46,7 +45,7 @@ class Colors extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;button class="primary_blue"&gt;Primary Blue&lt;br&gt;#0065AF&lt;/button&gt; <br />
                           &lt;button class="primary_green"&gt;Primary Green&lt;br&gt;#28B85B&lt;/button&gt; <br />
@@ -62,7 +61,7 @@ class Colors extends Component{
                 <p>
                   With all the Primary Colors in order, these are the Secondary Colors which can be used with the Primary Colors.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <button className="tab secondary_blue zi1">
                     Secondary Blue <br />
                     #06A7DD
@@ -79,7 +78,7 @@ class Colors extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;button class="secondary_blue"&gt;Secondary Blue&lt;br&gt;#06A7DD&lt;/button&gt; <br />
                           &lt;button class="secondary_green"&gt;Secondary Green&lt;br&gt;#06A77D&lt;/button&gt; <br />

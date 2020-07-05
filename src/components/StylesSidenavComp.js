@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import '../fluent.css';
 import '../App.css';
 import { NavLink } from "react-router-dom";
 
@@ -8,7 +7,7 @@ class StylesSidenav extends Component{
   render(){
     return(
         <nav className="column large3 medium4 small0">
-            <div className="nav_content"><br /><br />
+            <div className="nav_content"><br />
                 <h6 className="bold">Web</h6><br />
                 <div className="nav">
                     <input type="checkbox" className="nav_btn" defaultChecked/><div className="nav_title">&gt;Styles</div>
@@ -22,12 +21,12 @@ class StylesSidenav extends Component{
                       <NavLink to="/textalign">Text Alignment</NavLink><br />
                       <NavLink to="/typography">Typography</NavLink>
                     </div>
-                </div>
+                </div><br />
 
                 <div className="nav">
                     <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Controls</div>
                     <div className="nav_group">
-                      <div className="nav">
+                      <div className="nav"><br />
                         <input type="checkbox" className="nav_btn" /><div className="nav_title">&gt;Inputs - Basic</div>
                         <div className="nav_group">
                           <NavLink to="/text_input">Text Input</NavLink><br />
@@ -46,7 +45,7 @@ class StylesSidenav extends Component{
                         <div className="nav_group">
                           <NavLink to="/range">Range</NavLink><br />
                           <NavLink to="/radio">Radio</NavLink><br />
-                          <NavLink to="/swith">Switch</NavLink><br />
+                          <NavLink to="/switch">Switch</NavLink><br />
                           <NavLink to="/textarea">Textarea</NavLink><br />
                           <NavLink to="/checkbox">Checkbox</NavLink><br />
                           <NavLink to="/searchbox">Searchbox</NavLink><br />
@@ -101,8 +100,6 @@ class StylesSidenav extends Component{
                           <NavLink to="/snackbar">Snackbar</NavLink>
                         </div>
                       </div>
-
-                      <br /><br />
                     </div>
                 </div>
 

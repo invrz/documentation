@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import StylesSidenav from "../StylesSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class ObjAlign extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Alignment</h6>
@@ -20,7 +19,7 @@ class ObjAlign extends Component{
                 <p>
                   Aligning Elements Horizontally using Fluent Design for Web is as easy as it gets, just calling horizontal align classes can align the elements.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column large6 medium6 small6 left outline dlevel2">
                     Elements can be left aligned by adding class="left"
                   </div><br /><br /><br /><br />
@@ -34,7 +33,7 @@ class ObjAlign extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="column large6 medium6 small6 left outline dlevel2"&gt;Elements can be left aligned by adding class="left"&lt;/div&gt; <br />
                           &lt;div class="column large6 medium6 small6 right outline dlevel2"&gt;Elements can be left aligned by adding class="right"&lt;/div&gt; <br />

@@ -1,12 +1,14 @@
 import React, {Component} from "react"
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
-import './fluent.css';
+import "fdweb/fluent.css";
 import './App.css';
 
 import Topnav from "./components/TopnavComp";
 import Home from "./components/HomeComp";
+import Boilerplate from "./components/BoilerplateComp";
 import StyleHome from "./components/StylesHomeComp";
 import ControlsHome from "./components/ControlsHomeComp";
+
 
 import Typography from "./components/styles/TypographyComp";
 import Colors from "./components/styles/ColorsComp";
@@ -46,6 +48,12 @@ import Checkbox from "./components/controls/CheckboxComp";
 import Searchbox from "./components/controls/SearchboxComp";
 import Select from "./components/controls/SelectComp";
 import AdvSelect from "./components/controls/AdvancedSelectComp";
+import PivotMenu from "./components/controls/PivotMenuComp";
+import CommandBar from "./components/controls/CommandBarComp";
+
+import FourZeroFour from "./components/404Comp";
+import Breadcrumbs from "./components/controls/BreadcrumbsComp";
+import SideNav from "./components/controls/SideNavComp";
 
 class App extends Component{
   
@@ -55,6 +63,7 @@ class App extends Component{
           <Topnav />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path ="/boilerplate" component={Boilerplate} />
             <Route path="/getstarted" component={Home} />
             <Route path="/styles" component={StyleHome} />
             <Route path="/controls" component={ControlsHome} />
@@ -97,7 +106,12 @@ class App extends Component{
             <Route path="/searchbox" component={Searchbox} />
             <Route path="/select" component={Select} />
             <Route path="/adv_select" component={AdvSelect} />
-            
+            <Route path="/pivot_menu" component={PivotMenu} />
+            <Route path="/command_bar" component={CommandBar} />
+            <Route path="/breadcrumbs" component={Breadcrumbs} />
+            <Route path="/sidenav" component={SideNav} />
+
+            <Route component={FourZeroFour} />
 
           </Switch>
         </Router>

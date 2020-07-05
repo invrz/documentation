@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 
 import Sidenav from "./SidenavComp";
 import GettingStarted from "./GettingStartedComp";

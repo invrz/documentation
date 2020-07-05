@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Spinners extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Spinners</h6>
@@ -31,13 +30,13 @@ class Spinners extends Component{
                   Adding spinners is relatively easy than any other progress indicators. To add a Spinner using Fluent Design for Web 
                   do the following.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <p className="spinner"></p> 
                 </div>
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;p class="spinner"&gt;&lt;/p&gt; 
                         </pre>
@@ -51,7 +50,7 @@ class Spinners extends Component{
                   Their is a predefined size of Spinner and also 4 sizes which can be applied using extra classes. They are xs, s, m, and l 
                   for extra small, small, medium and large repectively.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column large1 medium3 small6 ta_center btm_col">
                     <p className="spinner xs"></p><br />
                     <span className="label">Extra Small</span>
@@ -72,7 +71,7 @@ class Spinners extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;p class="spinner xs"&gt;&lt;/p&gt; <br />
                           &lt;p class="spinner s"&gt;&lt;/p&gt;  <br />

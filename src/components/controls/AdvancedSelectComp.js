@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class AdvSelect extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Advanced Select</h6>
@@ -28,7 +27,7 @@ class AdvSelect extends Component{
                 <p>
                   Implementing Select in Fluent Design for Web is easy and can be done just by using HTML and Fluent Classes.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div class="drop_container">
                           <span class="drop_val" id="drop_value">Select an option</span><input class="drop" type="checkbox" />
                           <div class="opt_group dlevel2">
@@ -44,7 +43,7 @@ class AdvSelect extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;div class="drop_container"&gt; <br />
                         &nbsp;&nbsp;&lt;span class="drop_val" id="drop_value"&gt;Select an option&lt;/span&gt;&lt;input class="drop" type="checkbox" /&gt; <br />

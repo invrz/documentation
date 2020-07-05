@@ -49,6 +49,7 @@
 .top{
   position: relative;
   z-index: 12;
+  padding-bottom: 6px; height: 64px; padding-top: 12px;
 }
 .tile{
   font-size: 26px;
@@ -72,3 +73,4 @@
 *{font-family: 'Quicksand', 'Trebuchet MS', sans-serif;}
 * *{font-family: 'Barlow', 'Trebuchet MS', sans-serif;}
 
+.pivot_container, .pivot_container *{font-family: "Quicksand";}

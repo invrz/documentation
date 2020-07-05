@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import '../icons.css';
 import StylesSidenav from "../StylesSidenavComp";
@@ -12,7 +11,7 @@ class Icons extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Icon Pack</h6>
@@ -22,7 +21,7 @@ class Icons extends Component{
                 <p>
                   To use Fluent Icons in your project, you just need to include this piece of code in HEAD tag of the HTML files.
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                     <pre className="codeblock_text">
     &lt;link href="https://fluentdesignforweb.github.io/fluent-icons.css" rel="stylesheet" type="text/css" /&gt;
                     </pre>
@@ -34,7 +33,7 @@ class Icons extends Component{
                 <p>
                   To display Fluent Icons, you need to add appropriate ms-Icon classes with a modifier class inside an "i" tag. For example.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <i className="ms-Icon ms-Icon--12PointStar icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <i className="ms-Icon ms-Icon--GlobalNavButton icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <i className="ms-Icon ms-Icon--Home icon-large"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -43,7 +42,7 @@ class Icons extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;i className="ms-Icon ms-Icon--12PointStar"&gt;&lt;/i&gt;<br />
                           &lt;i className="ms-Icon ms-Icon--GlobalNavButton"&gt;&lt;/i&gt;<br />
@@ -59,7 +58,7 @@ class Icons extends Component{
                   Fluent Icons come in three different predefined sizes. They are small, medium and large. You can always get different sized icon 
                   by setting different font size for "i" tag.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column large1 medium4 small4 ta_center btm_col">
                     <i className="ms-Icon ms-Icon--12PointStar icon-small"></i><br />
                     <span className="label">Small</span>
@@ -76,7 +75,7 @@ class Icons extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;i className="ms-Icon ms-Icon--12PointStar"&gt;&lt;/i&gt;<br />
                           &lt;i className="ms-Icon ms-Icon--GlobalNavButton"&gt;&lt;/i&gt;<br />

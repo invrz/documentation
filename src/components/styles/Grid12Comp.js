@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import StylesSidenav from "../StylesSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Grid12 extends Component{
     return(
       <div>
         <StylesSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>12 Columns Grid</h6>
@@ -89,14 +88,14 @@ class Grid12 extends Component{
                   row should add up to 12 for each device size. You can make new rows by adding class="page_container" and new 
                   columns by adding class="column".
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column large3 medium3 small3 primary_inverted ta_center democol">3</div>
                   <div className="column large9 medium9 small9 primary_inverted ta_center democol">9</div>
                 </div>
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="column large3 medium3 small3 primary_inverted ta_center"&gt;3&lt;/div&gt;<br />
                           &lt;div class="column large9 medium9 small9 primary_inverted ta_center"&gt;9&lt;/div&gt;<br />
@@ -111,14 +110,14 @@ class Grid12 extends Component{
                   and the number after is the number of columns you want to offset by.
 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column offset-large3 offset-medium3 offset-small3 large9 medium9 small9 primary_inverted ta_center">3 Column Offset</div><br /><br />
                   <div className="column offset-large6 offset-medium6 offset-small6 large6 medium6 small6 primary_inverted ta_center">6 Column Offset</div>
                 </div>
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="column offset-large3 offset-medium3 offset-small3 large9 medium9 small9 primary_inverted ta_center"&gt;3 Column Offset&lt;/div&gt;<br />
                           &lt;div class="column offset-large6 offset-medium6 offset-small6 large6 medium6 small6 primary_inverted ta_center"&gt;6 Column Offset&lt;/div&gt;
@@ -133,7 +132,7 @@ class Grid12 extends Component{
                   using Fluent Design's responsive visibility classes. These allow you to show or hide content at a specific 
                   screen size, or across a whole range of sizes. This can be achieved by adding 0 classes.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div className="column large12 medium0 small0 primary_inverted ta_center">This Block will only be visible in large screen sizes</div>
                   <div className="column large0 medium12 small0 primary_inverted ta_center">This Block will only be visible in medium screen sizes</div>
                   <div className="column large0 medium0 small12 primary_inverted ta_center">This Block will only be visible in small screen sizes</div>
@@ -141,7 +140,7 @@ class Grid12 extends Component{
                 <p>
                   The language-markup to get the above output is
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                         <pre className="codeblock_text">
                           &lt;div class="column large12 medium0 small0 primary_inverted ta_center"&gt;This Block will only be visible in large screen sizes&lt;/div&gt;<br />
                           &lt;div class="column large0 medium12 small0 primary_inverted ta_center"&gt;This Block will only be visible in medium screen sizes&lt;/div&gt;<br />

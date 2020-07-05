@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class DateInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Date Input</h6>
@@ -31,13 +30,13 @@ class DateInput extends Component{
                   input of type Date gives a prestyled Date Input field. Not only that, an date picker appears automatically, 
                   if Date Input is called on the right side of Input.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="date" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="date" /&gt;
                       </pre>
@@ -49,13 +48,13 @@ class DateInput extends Component{
                 <p>
                   To make a Date Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="date" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="date" class="btm_brdr" /&gt;
                       </pre>
@@ -67,13 +66,13 @@ class DateInput extends Component{
                 <p>
                   To make a Date Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="date" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="date" class="btm_brdr transparent" /&gt;
                       </pre>

@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class PasswordInput extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Password Input</h6>
@@ -29,13 +28,13 @@ class PasswordInput extends Component{
                   When Using Fluent Design for Web, you don't need to add any additional classes to get a Input, just calling 
                   input of type Password gives a prestyled Password Input field.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="password" placeholder="Give a Password" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="password" placeholder="Give a Password" /&gt;
                       </pre>
@@ -47,13 +46,13 @@ class PasswordInput extends Component{
                 <p>
                   To make a Password Input field which only has a bottom border add a class="btm_brdr" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="password" placeholder="Give a Password" className="btm_brdr" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="password" placeholder="Give a Password" class="btm_brdr" /&gt;
                       </pre>
@@ -65,13 +64,13 @@ class PasswordInput extends Component{
                 <p>
                   To make a Password Input field which has transparent background add class="transparent" 
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <input type="password" placeholder="Give a Password" className="btm_brdr transparent" />
                 </div>
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                         &lt;input type="password" placeholder="Give a Password" class="btm_brdr transparent" /&gt;
                       </pre>

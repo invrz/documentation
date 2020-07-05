@@ -7,6 +7,7 @@
     border-radius: 2px;
 }
 
+/*
 @media (prefers-color-scheme: dark){
     body{background: #1e1e1e; color: #fcfcfc;}
     a, .link, ul .dropdown_btn{
@@ -16,6 +17,7 @@
         background: #1e1e1eaa;
     }
 }
+*/
 
 .spacein{
     margin: 5px;
@@ -50,11 +52,11 @@ a,p,pre{font-size: 18px; font-weight: 400;}
 /*Grid*/
 .page_container,.nav_container{
     display: block;
-    width: 88%;
+    width: 92%;
     margin: auto;
-    padding: 10px 30px;
+    padding: 10px;
 }
-.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 84%;}
+.outline{border: 1px solid #000; padding: 4px; border-radius: 10px; width: 90%;}
 footer{position: relative; width: 100%;}
 .row{display: inline-flex;}
 .column{display: inline-block; vertical-align: top;}
@@ -434,7 +436,7 @@ button.large,.button.large{min-width: 200px; height: 66px; font-size: 20px;}
 
 
 input[type=text],input[type=password],input[type=tel],input[type=number],input[type=email],
-input[type=date],input[type=datetime-local],input[type=month],input[type=search], textarea{
+input[type=date],input[type=datetime-local],input[type=month],input[type=search]{
     width: 360px;
     max-width: 80%;
     padding: 8px;
@@ -443,13 +445,6 @@ input[type=date],input[type=datetime-local],input[type=month],input[type=search]
     -moz-appearance: none;
     appearance: none;
     font-size: 18px;
-}   
-
-input[type="search"]{
-    background-image: url(./controls/SearchBack.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 40px;
 }
 
 input[type=text]:hover,input[type=password]:hover,input[type=tel]:hover,input[type=number]:hover,
@@ -471,7 +466,6 @@ input.btm_brdr, input.btm_brdr:hover, input.btm_brdr:focus{
     border: 1.5px solid rgba(0, 0, 0, 0.4); 
     padding: 0.5%;
 }
-
 .search_box input{width: 80%; border:none;}
 .search_box button{background: transparent; padding: 2%; float: left; border:none;}
 .search_box:hover{border: 1.5px solid rgba(0, 0, 0, 0.6);}
@@ -481,16 +475,12 @@ input.btm_brdr, input.btm_brdr:hover, input.btm_brdr:focus{
 
 /*Dropdown*/
 select{
-    width: 360px;
-    max-width: 80%;
+    text-align: left;
+    width: 80%;
+    padding: 1.5%;
     border: 1.5px solid rgba(0, 0, 0, 0.4);
     background: #FFF;
-    line-height: 1.2;
-    padding: 10px;
-    height: 50px;
-}
-select option{
-    line-height: 1.2;
+    height: 40px;
 }
 select:hover{border: 1.5px solid rgba(0, 0, 0, 0.6);}
 select:focus{border: 1.5px solid rgba(6, 167, 221, 1);}
@@ -498,20 +488,16 @@ select option{padding: 2%; white-space: normal;}
 
 .drop{
     position:relative;
-    width: 360px;
-    max-width: 80%; 
+    width: 80%; 
     -webkit-appearance: none; 
     -moz-appearance: none; 
     border: 1.5px solid rgba(0, 0, 0, 0.4); 
-    padding: 8px; 
-    height: 40px;
-    background: #fcfcfc;
-    margin-left: 0px;
+    padding: 2%; height: 6%;
 }
 .drop:hover{border: 1.5px solid rgba(0, 0, 0, 0.6);}
 .drop:checked{border: 1.5px solid rgba(6, 167, 221, 1);}
 .drop_val{ position: absolute; padding: 1%; z-index: 1;}
-.opt_group{width: 360px; max-width: 80%; display: none; background: #fcfcfc;}
+.opt_group{width: 80%; display: none;}
 input[type=radio].drop_opt{
     position:relative;
     margin-left: 0px;
@@ -520,8 +506,8 @@ input[type=radio].drop_opt{
     width: 100%; 
     -webkit-appearance: none; 
     -moz-appearance: none; 
-    padding: 8px; 
-    height: 40px;
+    padding: 2%; 
+    height: 6%;
 }
 input[type=radio].drop_opt:hover{background: #DDD}
 input[type=radio].drop_opt:checked{background: #FFF; box-shadow: none;}
@@ -617,7 +603,7 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     width: 0px;
     height: 0px;
     background: #eee;
-    border-radius: 10px;
+    border-radius: 90px;
     opacity: 1;
 }
 
@@ -642,8 +628,7 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     width: 16px;
     height: 16px;
     border-radius: 90px;
-    margin: 7px;
-    margin-left: 10px;
+    margin: 4px;
 }
 
 .switch input:checked ~ .toggle{
@@ -671,7 +656,6 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     cursor: pointer;
     width: 25px;
     height: 25px;
-    margin: 0px;
 }
 .checkmark{
     color: transparent;
@@ -684,7 +668,6 @@ input[type=radio]:checked{background: rgba(0, 0, 0, 0.8); border: 5px solid #FFF
     margin: 0px;
     padding: 0px;
 }
-.checkmark i{font-weight: 900;}
 .check input:hover{border:2px solid #000}
 
 .check input:checked ~ .checkmark{
@@ -1062,6 +1045,7 @@ img.square{
 
 
 
+/*
 @media (prefers-color-scheme: dark){
     .ms-icon{
         color: #fcfcfc;
@@ -1105,8 +1089,7 @@ img.square{
         font-size: 18px;
         background: #000000;
         color: #fcfcfc;
-        height: 36px;
-        line-height: 1.2;
+        height: 40px;
     }
 
 
@@ -1150,3 +1133,4 @@ img.square{
     li:hover{border-left: 4px solid #000; transition: 200ms; background: rgba(200, 200, 200, 0.6);}
 
 }
+*/

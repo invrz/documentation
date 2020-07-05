@@ -1,17 +1,16 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import { NavLink } from "react-router-dom";
 
 class Styles extends Component{
   
   render(){
     return(
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Styles</h6>
             <br />
-            <div className="page_container">
+            <div className="colunm large12 medium12 small12">
               <div className="column large4 medium10 small12">
                 <NavLink to="/12colgrid"><button className="primary_white tile zi3">12 Col Grid</button></NavLink>
                 <br />

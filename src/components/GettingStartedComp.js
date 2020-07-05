@@ -1,12 +1,11 @@
 import React, {Component} from "react";
-import '../fluent.css';
 import { NavLink } from "react-router-dom";
 
 class GettingStarted extends Component{
   
   render(){
     return(
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Get Started</h6>
@@ -77,6 +76,7 @@ class GettingStarted extends Component{
                 <p className="title bold">Extending on Usage</p>
                 <div>
                     You can go through the following links to know more about the classes which Fluent Design for Web has and how to use them in your website.<br /><br />
+                    <NavLink to="/boilerplate">Boilerplate</NavLink><br />
                     <NavLink to="/styles">Styles</NavLink><br />
                     <NavLink to="/controls">Controls</NavLink><br />
                     <NavLink to="/iconpack">Icons</NavLink><br />

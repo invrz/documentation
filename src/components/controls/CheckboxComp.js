@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import '../fluent.css';
 import '../extra.css';
 import ControlsSidenav from "../ControlsSidenavComp";
 import Footer from "../FooterComp";
@@ -10,7 +9,7 @@ class Checkbox extends Component{
     return(
       <div>
         <ControlsSidenav />
-        <main className="column offset-large3 offset-medium4 large9 medium8 small12">
+        <main className="column offset-large3 offset-medium4 large9 medium8 small12 page_container">
             <br />
             <br />
             <h6>Checkbox</h6>
@@ -29,7 +28,7 @@ class Checkbox extends Component{
                 <p>
                   Implementing Checkboxes in Fluent Design for Web is easy and can be done just by using HTML and Fluent Classes.
                 </p>
-                <div className="page_container outline">
+                <div className="outline">
                   <div class="check">Label : &nbsp;&nbsp;
                     <input type="checkbox" />
                     <button class="checkmark"><i class="ms-Icon ms-Icon--Accept" aria-hidden="true"></i></button>
@@ -39,7 +38,7 @@ class Checkbox extends Component{
                 <p>
                   The language-markup to get the above output
                 </p>
-                <div className="code_content enabled page_container">
+                <div className="code_content enabled">
                       <pre className="codeblock_text">
                       &lt;div class="switch"&gt; <br />
                       &nbsp;&nbsp;&lt;input type="checkbox" /&gt; <br />

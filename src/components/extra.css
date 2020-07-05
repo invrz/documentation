@@ -46,3 +46,33 @@ span.label{
 .btm_col{
     vertical-align: bottom;
 }
+.type{
+    color: #DE1738;
+}
+.pivot_title{
+    font-size: 24px;
+    color: #fcfcfc;
+    padding: 5px;
+}
+.pivot_title:hover::before{
+    display: none;
+}
+.pivot_menu{
+    height: 40px;
+}
+.commandbar_container, .breadcrumb_container{
+    background: #fff;
+}
+.dropdown_container{
+    display: inline-block;
+    width: auto;
+}
+.dropdown_container .commandbar_button{
+    width: auto;
+    border: none;
+    padding: 10px;
+}
+.commandbar_button{
+    font-size: 16px;
+}
+.last{font-weight: 800;}
