@@ -59,7 +59,7 @@ class Boilerplate extends Component{
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;h3&gt;Hi! This is Simple Boilerplate for Fluent Design for Web.&lt;/h3&gt;  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;  &lt;/main&gt;  <br /><br />
 
-&nbsp;&nbsp;&nbsp;&nbsp;  &lt;script src="https://fluentdesignforweb.github.io/fluent.js" async&gt;&lt;/script&gt;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;  &lt;script src="https://fluentdesignforweb.github.io/fluent.js" type="text/javascript"&gt;&lt;/script&gt;  <br />
 &nbsp;&nbsp;&lt;/body&gt;  <br />
 
 &lt;/html&gt;  <br />
