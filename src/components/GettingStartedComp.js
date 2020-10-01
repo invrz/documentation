@@ -44,7 +44,7 @@ class GettingStarted extends Component{
                     <br /><br />
                     <div className="code_content enabled">
                         <pre className="codeblock_text">
-    &lt;link href="https://fluentdesignforweb.github.io/fluent.js" rel="stylesheet" type="text/css" /&gt;
+    &lt;script src="https://fluentdesignforweb.github.io/fluent.js" type="text/javascript"&gt;&lt;/script&gt;
                         </pre>
                     </div>
                 </div>
